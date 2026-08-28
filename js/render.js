@@ -264,9 +264,8 @@
           <div class="pi-links">${Object.entries(pi.links)
             .map(([k, v]) => `<a href="${esc(v)}">${esc(k)}</a>`)
             .join("")}</div>
-          <div class="pi-email"><a href="mailto:${esc(pi.email)}">${esc(pi.email)}</a>${
-            pi.office ? ` · ${esc(pi.office)}` : ""
-          }</div>
+          <div class="pi-email"><a href="mailto:${esc(pi.email)}">${esc(pi.email)}</a></div>
+          ${pi.office ? `<div class="pi-office">${esc(pi.office)}</div>` : ""}
         </div>
       </div>`;
 

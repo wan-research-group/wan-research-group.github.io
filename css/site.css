@@ -316,6 +316,7 @@ h1.page-title { font-size: 42px; line-height: 1.15; margin-bottom: 14px; }
 .pi-bio p { font-size: 15px; color: var(--ink-soft); margin-bottom: 12px; max-width: 54em; }
 .pi-links { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; margin-top: 6px; }
 .pi-email { font-family: var(--mono); font-size: 13.5px; color: var(--ink-soft); margin-top: 8px; }
+.pi-office { font-family: var(--mono); font-size: 13.5px; color: var(--ink-soft); margin-top: 3px; }
 
 .people-group { padding: 26px 0 6px; }
 .people-group h2 {
