@@ -90,7 +90,7 @@
       <div class="footer-inner">
         <div>
           <h4>${esc(S.name)}</h4>
-          <p>${esc(S.expansion)}<br>${esc(S.department)}<br>${esc(S.institution)}, New York, NY</p>
+          <p>${esc(S.expansion)}<br>${esc(S.department)}<br>${esc(S.institution)}<br>${esc(S.address)}</p>
         </div>
         <div>
           <h4>Contact</h4>
@@ -264,9 +264,42 @@
           <div class="pi-links">${Object.entries(pi.links)
             .map(([k, v]) => `<a href="${esc(v)}">${esc(k)}</a>`)
             .join("")}</div>
-          <div class="pi-email">${esc(pi.email)}</div>
+          <div class="pi-email"><a href="mailto:${esc(pi.email)}">${esc(pi.email)}</a>${
+            pi.office ? ` · ${esc(pi.office)}` : ""
+          }</div>
         </div>
       </div>`;
+
+    const menteesHTML = (() => {
+      const rows = window.PEOPLE.pastMentees || [];
+      if (!rows.length) return "";
+      return `
+        <div class="people-group">
+          <h2>Past Mentees</h2>
+          ${window.PEOPLE.pastMenteesNote ? `<p class="group-note">${esc(window.PEOPLE.pastMenteesNote)}</p>` : ""}
+          <div class="table-scroll">
+            <table class="mentee-table">
+              <thead>
+                <tr><th>Name</th><th>Years</th><th>Background</th><th>Selected work</th><th>Next</th></tr>
+              </thead>
+              <tbody>
+                ${rows
+                  .map((m) => {
+                    const name = m.link ? `<a href="${esc(m.link)}">${esc(m.name)}</a>` : esc(m.name);
+                    return `<tr>
+                      <td class="mentee-name">${name}</td>
+                      <td class="mentee-years">${esc(m.years || "")}</td>
+                      <td>${esc(m.background || "")}</td>
+                      <td class="mentee-highlight">${esc(m.highlight || "")}</td>
+                      <td>${m.next ? "→ " + esc(m.next) : ""}</td>
+                    </tr>`;
+                  })
+                  .join("")}
+              </tbody>
+            </table>
+          </div>
+        </div>`;
+    })();
 
     groupsEl.innerHTML = (window.PEOPLE.groups || [])
       .filter((g) => (g.members || []).length > 0)
@@ -288,6 +321,7 @@
                   ${avatar}
                   <h3>${esc(m.name)}</h3>
                   <div class="person-role">${esc(m.role || "")}${m.destination ? " " + esc(m.destination) : ""}</div>
+                  ${m.note ? `<div class="person-note">${esc(m.note)}</div>` : ""}
                   ${m.interests ? `<div class="person-interests">${esc(m.interests)}</div>` : ""}
                   ${links ? `<div class="person-links">${links}</div>` : ""}
                 </div>`;
@@ -296,7 +330,7 @@
           </div>
         </div>`
       )
-      .join("");
+      .join("") + menteesHTML;
   }
 
   // ---------- page dispatch ----------

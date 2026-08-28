@@ -17,7 +17,7 @@ window.SITE = {
   recruitingNote:
     "We are recruiting PhD students, postdocs, and student researchers.",
   email: "zw3306@columbia.edu",
-  address: "Department of Computer Science, Columbia University, New York, NY",
+  address: "500 West 120th Street, New York, NY 10027",
   links: {
     scholar: "https://scholar.google.com/citations?user=dt3ImqIAAAAJ&hl=en",
     github: "https://github.com/zishenwan",
