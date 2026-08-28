@@ -9,7 +9,7 @@ window.NEWS = [
   {
     date: "2026-08",
     tag: "Lab",
-    text: "The EMBARC Lab officially launches at Columbia University! We are recruiting PhD students (Fall 2027), postdocs, and student researchers — see [Join Us](join.html).",
+    text: "The EMBARC Lab officially launches at Columbia University! We are recruiting PhD students (Fall 2027), postdocs, and student researchers. See [Join Us](join.html).",
   },
   {
     date: "2026-07",

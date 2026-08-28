@@ -2,13 +2,13 @@
 
 The website of the EMBARC Lab (Embodied-AI Architecture & Co-design) at Columbia University.
 
-**Zero build tools.** Pure HTML/CSS/JS — every page works by opening the `.html` file directly or serving the folder statically. All content lives in `data/*.js`; to update the site you almost never touch HTML.
+**Zero build tools.** Pure HTML/CSS/JS: every page works by opening the `.html` file directly or serving the folder statically. All content lives in `data/*.js`; to update the site you almost never touch HTML.
 
 ## Everyday updates (for lab members)
 
 | Task | File | What to do |
 |---|---|---|
-| Add a paper | `data/publications.js` | Copy an entry to the top of the array. Set `venue`, `year`, `tags` (research area), `links`. Add `selected: true` to feature it on the home page (keep ~6–8 selected). |
+| Add a paper | `data/publications.js` | Copy an entry to the top of the array. Set `venue`, `year`, `tags` (research area), `links`. Add `selected: true` to feature it on the home page (keep ~6-8 selected). |
 | Add news | `data/news.js` | Add an entry at the top. `[text](url)` inside `text` becomes a link. |
 | Add a member | `data/people.js` | Add to the right group in `groups`. Put their photo in `assets/` (square crop looks best). Names listed here are auto-bolded in the publication list. Use `note` for co-advising or home institution. |
 | Add a past mentee | `data/people.js` | Add a row to `pastMentees` (name, years, background, optional `highlight` publication, `next` destination). |
@@ -57,4 +57,3 @@ assets/ ……… photos, favicon, figures
 - [ ] Confirm lab name (currently **EMBARC**; change in `data/site.js` + the `<title>`/meta tags of the six HTML pages, and `sitemap.xml`)
 - [ ] `data/publications.js`: fill in full author lists for FortiSky (DATE'26) and the FCCM'26 ferroelectric-FPGA paper (currently "et al.")
 - [ ] `join.html`: verify the Columbia CS PhD application link/deadline wording before December
-- [ ] `assets/jiayi_qian.png` is the cat avatar from Jiayi's homepage — swap for a portrait if preferred

@@ -518,7 +518,7 @@ window.BOOKS = [
     venue: "Synthesis Lectures on Computer Architecture, Morgan & Claypool Publishers",
     year: 2021,
     links: { Book: "https://www.morganclaypool.com/doi/10.2200/S01101ED1V01Y202105CAC056" },
-    blurb: "A thorough overview of FPGA-based robotic computing accelerator designs — perception, localization, planning, and multi-robot collaboration — including commercial autonomous vehicles and space robots.",
+    blurb: "A thorough overview of FPGA-based robotic computing accelerator designs (perception, localization, planning, and multi-robot collaboration), including commercial autonomous vehicles and space robots.",
   },
   {
     title: "Machine Learning Systems: Principles and Practices of Engineering Artificially Intelligent Systems",
@@ -526,6 +526,6 @@ window.BOOKS = [
     venue: "Open-source textbook, Harvard University",
     year: 2024,
     links: { Book: "https://harvard-edge.github.io/cs249r_book/", GitHub: "https://github.com/harvard-edge/cs249r_book" },
-    blurb: "An open-source, community-driven textbook on engineering complete ML systems — data, model design, optimization, acceleration, security hardening, and deployment.",
+    blurb: "An open-source, community-driven textbook on engineering complete ML systems: data, model design, optimization, acceleration, security hardening, and deployment.",
   },
 ];

@@ -1,5 +1,5 @@
 /* ============================================================
-   EMBARC Lab — shared rendering script.
+   EMBARC Lab shared rendering script.
    Reads data from data/*.js and renders nav, footer, and the
    page-specific sections. Pages opt in via <body data-page="...">.
    ============================================================ */
@@ -321,6 +321,7 @@
                   <h3>${esc(m.name)}</h3>
                   <div class="person-role">${esc(m.role || "")}${m.destination ? " " + esc(m.destination) : ""}</div>
                   ${m.note ? `<div class="person-note">${esc(m.note)}</div>` : ""}
+                  ${m.edu ? `<div class="person-edu">${esc(m.edu)}</div>` : ""}
                   ${m.interests ? `<div class="person-interests">${esc(m.interests)}</div>` : ""}
                   ${links ? `<div class="person-links">${links}</div>` : ""}
                 </div>`;
