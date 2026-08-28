@@ -56,8 +56,7 @@ window.PEOPLE = {
       members: [
         {
           name: "Rishi Khare",
-          role: "M.S. Student",
-          note: "Georgia Tech",
+          role: "M.S. Student, Georgia Tech",
           edu: "B.S., UC Berkeley",
           photo: "assets/rishi_khare.webp",
           links: {
@@ -66,8 +65,7 @@ window.PEOPLE = {
         },
         {
           name: "Yichong Zhang",
-          role: "B.S. Student",
-          note: "Tsinghua University",
+          role: "B.S. Student, Tsinghua University",
           links: {},
         },
       ],
@@ -101,7 +99,7 @@ window.PEOPLE = {
     {
       name: "Yuhang Du", years: "2024-2026",
       background: "B.S., Fudan",
-      highlight: "ReCA (ASPLOS'25), EmbodiedPerf (ISPASS'25), Thinking & Moving (ICCAD'24)",
+      highlight: "ReCA (ASPLOS'25), EmbodiedPerf (ISPASS'25)",
       next: "Ph.D., UCLA",
     },
     {
@@ -109,6 +107,12 @@ window.PEOPLE = {
       background: "M.S., GaTech",
       highlight: "Faster-MoA (DAC'26)",
       next: "Samsung Semiconductor",
+    },
+    {
+      name: "Logashree Venkatasubramanian", years: "2025-2026",
+      background: "M.S., GaTech",
+      highlight: "FLARE (arXiv'26)",
+      next: "Apple",
     },
     {
       name: "Arnav Ramamoorthy", years: "2025-2026",
@@ -137,6 +141,12 @@ window.PEOPLE = {
       background: "M.S., GaTech",
       highlight: "RRAM-CIM ADC Noise (ISCAS'25)",
       next: "Micron",
+    },
+    {
+      name: "Katarine Klitzke", years: "2021-2022",
+      background: "B.S., GaTech",
+      highlight: "Forbes 30 Under 30",
+      next: "Microsoft",
     },
   ],
 };
