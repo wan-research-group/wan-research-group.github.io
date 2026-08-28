@@ -274,7 +274,7 @@
       if (!rows.length) return "";
       return `
         <div class="people-group">
-          <h2>Past Mentees</h2>
+          <h2>Past Students</h2>
           ${window.PEOPLE.pastMenteesNote ? `<p class="group-note">${esc(window.PEOPLE.pastMenteesNote)}</p>` : ""}
           <div class="table-scroll">
             <table class="mentee-table">

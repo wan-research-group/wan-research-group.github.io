@@ -13,7 +13,7 @@ window.PEOPLE = {
     bio: [
       "Zishen Wan is an Assistant Professor of Computer Science at Columbia University, where he directs the EMBARC Lab. He is a computer architect and SoC designer working across computer architecture, computer systems, and chip/VLSI design. His group develops cross-layer computing systems that span software and system design, architecture, and silicon for emerging AI workloads, including embodied, physical, neuro-symbolic, and agentic AI, and develops agentic AI methods for the design, optimization, and verification of computing systems.",
       "Before joining Columbia, he was a Postdoctoral Fellow at Harvard University, working with Prof. Vijay Janapa Reddi. He received his Ph.D. from Georgia Tech in 2025, advised by Prof. Arijit Raychowdhury and Prof. Tushar Krishna. His dissertation, “Tailored Computing: Cross-Layer System, Architecture, and Silicon Co-Design for Physical Intelligence,” received the ACM SIGDA Outstanding Ph.D. Dissertation Award, the FCCM Outstanding Ph.D. Dissertation Award, and Georgia Tech's Colonel Oscar P. Cleaver Award.",
-      "His research has been recognized with Best Paper Awards from DAC, IEEE Computer Architecture Letters, and DARPA SRC JUMP 2.0, IEEE Micro Top Picks recognition, and first-place honors at the DAC Ph.D. Forum and the ACM Student Research Competition, along with the Baidu and Qualcomm Fellowships. He was selected as both an ML and Systems Rising Star and a Cyber-Physical Systems Rising Star, and his work involves close collaboration with IBM, TSMC, Intel, and Google.",
+      "His research has been recognized with Best Paper Awards from DAC, IEEE Computer Architecture Letters, and DARPA SRC JUMP 2.0, IEEE Micro Top Picks recognition, and first-place honors at the DAC Ph.D. Forum and the ACM Student Research Competition, along with the WAIC Yunfan Award and the Baidu and Qualcomm Fellowships. He was selected as both an ML and Systems Rising Star and a Cyber-Physical Systems Rising Star, and his work involves close collaboration with IBM, TSMC, Intel, and Google.",
     ],
     email: "zw3306@columbia.edu",
     office: "522 CSB, 500 West 120th Street, New York, NY 10027",
@@ -58,7 +58,7 @@ window.PEOPLE = {
           name: "Rishi Khare",
           role: "M.S. Student, Georgia Tech",
           edu: "B.S., UC Berkeley",
-          photo: "assets/rishi_khare.webp",
+          photo: "assets/rishi_khare.jpg",
           links: {
             Website: "https://www.rishiskhare.com/",
             Scholar: "https://scholar.google.com/citations?user=1SFrDE4AAAAJ&hl=en",
@@ -90,7 +90,7 @@ window.PEOPLE = {
   // ---- Past mentees (compact table) ----
   // Students Prof. Wan mentored before/outside the lab, with where they went next.
   pastMenteesNote:
-    "Students we have had the privilege of mentoring, and where they went next.",
+    "Students we have had the privilege of working with, and where they went next.",
   pastMentees: [
     {
       name: "Chenyu Wang", years: "2024-2026",
@@ -141,7 +141,7 @@ window.PEOPLE = {
     {
       name: "Ying-Hao Wei", years: "2022-2023",
       background: "M.S., GaTech",
-      highlight: "RRAM-CIM ADC Noise (ISCAS'25)",
+      highlight: "RRAM CIM (ISCAS'25)",
       next: "Micron",
     },
     {
