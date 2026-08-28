@@ -61,6 +61,8 @@ window.PEOPLE = {
           photo: "assets/rishi_khare.webp",
           links: {
             Website: "https://www.rishiskhare.com/",
+            Scholar: "https://scholar.google.com/citations?user=1SFrDE4AAAAJ&hl=en",
+            LinkedIn: "https://www.linkedin.com/in/rishi-khare/",
           },
         },
         {
