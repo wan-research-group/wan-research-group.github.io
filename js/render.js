@@ -189,6 +189,7 @@
 
   const AREA_LABELS = {
     all: "All",
+    selected: "Selected",
     embodied: "Embodied & Agentic Systems",
     cognitive: "Cognitive & Neuro-Symbolic",
     silicon: "Silicon & Hardware",
@@ -197,20 +198,31 @@
 
   function renderPublicationsPage(listEl, controlsEl) {
     let area = "all";
+    let query = "";
+
+    function matches(p) {
+      if (area === "selected" && !p.selected) return false;
+      if (area !== "all" && area !== "selected" && !(p.tags || []).includes(area)) return false;
+      if (query) {
+        const hay = `${p.title} ${p.authors} ${p.venue} ${p.venueFull || ""} ${p.year}`.toLowerCase();
+        if (!query.toLowerCase().split(/\s+/).every((w) => hay.includes(w))) return false;
+      }
+      return true;
+    }
 
     function draw() {
-      const pubs = window.PUBLICATIONS.filter(
-        (p) => area === "all" || (p.tags || []).includes(area)
-      );
+      const pubs = window.PUBLICATIONS.filter(matches);
       const byYear = {};
       pubs.forEach((p) => (byYear[p.year] = byYear[p.year] || []).push(p));
       const years = Object.keys(byYear).sort((a, b) => b - a);
-      listEl.innerHTML = years
-        .map(
-          (y) =>
-            `<div class="pub-year">${y}</div>` + byYear[y].map(pubItemHTML).join("")
-        )
-        .join("");
+      listEl.innerHTML = pubs.length
+        ? years
+            .map(
+              (y) =>
+                `<div class="pub-year">${y}</div>` + byYear[y].map(pubItemHTML).join("")
+            )
+            .join("")
+        : `<p class="pub-empty">No publications match. Try a different search or filter.</p>`;
       controlsEl.querySelector(".pub-count").textContent =
         `${pubs.length} publication${pubs.length === 1 ? "" : "s"}`;
     }
@@ -221,7 +233,9 @@
           ([k, label]) =>
             `<button class="pub-filter ${k === "all" ? "active" : ""}" data-area="${k}">${label}</button>`
         )
-        .join("") + `<span class="pub-count"></span>`;
+        .join("") +
+      `<input class="pub-search" type="search" placeholder="Search title, author, venue…" aria-label="Search publications">` +
+      `<span class="pub-count"></span>`;
 
     controlsEl.querySelectorAll(".pub-filter").forEach((btn) =>
       btn.addEventListener("click", () => {
@@ -230,6 +244,10 @@
         draw();
       })
     );
+    controlsEl.querySelector(".pub-search").addEventListener("input", (e) => {
+      query = e.target.value.trim();
+      draw();
+    });
     draw();
   }
 

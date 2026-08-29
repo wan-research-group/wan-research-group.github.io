@@ -54,6 +54,7 @@ assets/ ……… photos, favicon, figures
 
 ## Content TODOs
 
+- [ ] Add paper links for TECS'26, Hawkeye (DL4C'26), and the AICAS'21 quad-camera paper when available
+
 - [ ] Confirm lab name (currently **EMBARC**; change in `data/site.js` + the `<title>`/meta tags of the six HTML pages, and `sitemap.xml`)
-- [ ] `data/publications.js`: fill in full author lists for FortiSky (DATE'26) and the FCCM'26 ferroelectric-FPGA paper (currently "et al.")
 - [ ] `join.html`: verify the Columbia CS PhD application link/deadline wording before December

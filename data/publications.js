@@ -51,6 +51,14 @@ window.PUBLICATIONS = [
     },
   },
   {
+    id: "tecs26",
+    title: "Cross-Layer Design of Vector-Symbolic Computing: Bridging Cognition and Brain-Inspired Hardware Acceleration",
+    authors: "Shuting Du, Mohamed Ibrahim, Zishen Wan, Luqi Zheng, Boheng Zhao, Zhenkun Fan, Che-Kai Liu, Tushar Krishna, Arijit Raychowdhury, Haitong Li",
+    venue: "TECS", venueFull: "ACM Transactions on Embedded Computing Systems",
+    year: 2026, type: "journal", tags: ["cognitive", "silicon"],
+    links: {},
+  },
+  {
     id: "arborist",
     title: "Arborist: Algorithm-Hardware Co-Design for Fast and Efficient Motion Planning",
     authors: "Yaotian Liu, Lingyi Huang, Zishen Wan, Bo Yuan, Cheng Tan, Jeff Zhang",
@@ -73,14 +81,14 @@ window.PUBLICATIONS = [
   {
     id: "quarch",
     title: "QuArch: A Benchmark for Evaluating LLM Reasoning in Computer Architecture",
-    authors: "Shvetank Prakash, Andy Cheng, Arya Tschand, Mark Mazumder, Varun Gohil, Jeff Ma, Jason Yik, Zishen Wan, Jessica Quaye, et al., Luca Carloni, Tushar Krishna, Ankita Nayak, Amir Yazdanbakhsh, Vijay Janapa Reddi",
+    authors: "Shvetank Prakash, Andrew Cheng, Arya Tschand, Mark Mazumder, Varun Gohil, Jeffrey Ma, Jason Yik, Zishen Wan, Jessica Quaye, Elisavet Lydia Alvanaki, Avinash Kumar, Chandrashis Mazumdar, Tuhin Khare, Alexander Ingare, Ikechukwu Uchendu, Radhika Ghosal, Abhishek Tyagi, Chenyu Wang, Andrea Mattia Garavagno, Sarah Gu, Alice Guo, Grace Hur, Luca Carloni, Tushar Krishna, Ankita Nayak, Amir Yazdanbakhsh, Vijay Janapa Reddi",
     venue: "ICML", venueFull: "International Conference on Machine Learning",
     year: 2026, type: "conference", tags: ["arch2"],
     links: { Paper: "https://www.arxiv.org/pdf/2510.22087", Website: "https://quarch.ai/" },
   },
   {
     id: "faster-moa",
-    title: "Faster-MoA: Low-Latency MoA Serving with Early Exit and Agent-Aware Prefill-Decode Overlap",
+    title: "Efficient Mixture-of-Agents Serving via Tree-Structured Routing, Adaptive Pruning, and Dependency-Aware Prefill-Decode Overlap",
     authors: "Zijun Wang, Yijiahao Qi, Hanqiu Chen, Zishen Wan, Gongjin Sun, Dongyang Li, Shuyi Pei, Cong (Callie) Hao",
     venue: "DAC", venueFull: "ACM/IEEE Design Automation Conference",
     year: 2026, type: "conference", tags: ["embodied"],
@@ -97,7 +105,7 @@ window.PUBLICATIONS = [
   {
     id: "fortisky",
     title: "FortiSky: Enhancing Adversarial and Bit-Error Robustness for Efficient and Secure Autonomous Systems",
-    authors: "Zishen Wan, et al. (with IBM Research)",
+    authors: "Zishen Wan, Karthik Swaminathan, Nandhini Chandramoorthy, Pin-Yu Chen, Tushar Krishna, Vijay Janapa Reddi, Arijit Raychowdhury",
     venue: "DATE", venueFull: "Design, Automation and Test in Europe Conference",
     year: 2026, type: "conference", tags: ["embodied"],
     links: { Paper: "https://zishenwan.github.io/publication/DATE26_FortiSky.pdf" },
@@ -113,7 +121,7 @@ window.PUBLICATIONS = [
   {
     id: "ferro3d",
     title: "Enabling Context-Switchable Monolithic 3D FPGA Design Using Bistable Ferroelectric Inverters",
-    authors: "Zishen Wan, et al.",
+    authors: "Faaiq Waqar, Matthew Chen, Zifan He, Zishen Wan, Minji Shon, Wei-Hsing Huang, Jason Cong, Shimeng Yu",
     venue: "FCCM", venueFull: "IEEE International Symposium on Field-Programmable Custom Computing Machines",
     year: 2026, type: "conference", tags: ["silicon"],
     links: { Paper: "https://zishenwan.github.io/publication/FCCM26_Ferro3D_FPGA.pdf" },
@@ -125,6 +133,14 @@ window.PUBLICATIONS = [
     venue: "ICLAD", venueFull: "IEEE International Conference on LLM-Aided Design",
     year: 2026, type: "conference", tags: ["arch2"],
     links: { Paper: "https://arxiv.org/pdf/2608.02915" },
+  },
+  {
+    id: "hdlxgraph",
+    title: "HDLxGraph: Bridging Large Language Models and HDL Repositories via HDL Graph Databases",
+    authors: "Pingqing Zheng, Jiayin Qin, Fuqi Zhang, Niraj Chitla, Zishen Wan, Shang Wu, Yu (Kevin) Cao, Caiwen Ding, Yang (Katie) Zhao",
+    venue: "ASP-DAC", venueFull: "Asia and South Pacific Design Automation Conference",
+    year: 2026, type: "conference", tags: ["arch2"],
+    links: { Paper: "https://arxiv.org/pdf/2505.15701" },
   },
   {
     id: "archeval",
@@ -153,10 +169,26 @@ window.PUBLICATIONS = [
   {
     id: "genai-systems",
     title: "GenAI for Systems: Recurring Challenges and Design Principles from Software to Silicon",
-    authors: "Arya Tschand*, Chenyu Wang*, Zishen Wan*, Andrew Cheng, et al., Vijay Janapa Reddi",
+    authors: "Arya Tschand*, Chenyu Wang*, Zishen Wan*, Andrew Cheng, Ioana Cristescu, Kevin He, Howard Huang, Alexander Ingare, Akseli Kangaslahti, Sara Kangaslahti, Theo Lebryk, Hongjin Lin, Jeffrey Jian Ma, Alexandru Meterez, Clara Mohri, Depen Morwani, Sunny Qin, Roy Rinberg, Paula Rodriguez-Diaz, Alyssa Mia Taliotis, Pernille Undrum Fathi, Rosie Zhao, Todd Zhou, Vijay Janapa Reddi",
     venue: "arXiv", venueFull: "arXiv preprint",
     year: 2026, type: "preprint", tags: ["arch2"],
     links: { Paper: "https://arxiv.org/pdf/2602.15241", Website: "https://harvard-edge.github.io/cs249r_fall2025/" },
+  },
+  {
+    id: "hawkeye",
+    title: "Hawkeye: Hardware-Aware GPU Kernel Optimization with Minimal Supervision",
+    authors: "Arya Tschand, Kesavan Ramakrishnan, Alexander Ingare, Simon Guo, Jeffrey Jian Ma, Zishen Wan, Simran Arora, Azalia Mirhoseini, Vijay Janapa Reddi",
+    venue: "DL4C @ ICML", venueFull: "ICML Workshop on Deep Learning for Code",
+    year: 2026, type: "preprint", tags: ["arch2"],
+    links: {},
+  },
+  {
+    id: "flare",
+    title: "FLARE: One-Shot PE-Level Fault Localization in Systolic Arrays via Algebraic Test Vectors",
+    authors: "Logashree Venkatasubramanian, Zishen Wan, Viveck Cadambe",
+    venue: "arXiv", venueFull: "arXiv preprint",
+    year: 2026, type: "preprint", tags: ["silicon"],
+    links: { Paper: "https://arxiv.org/pdf/2605.08594" },
   },
 
   // ---------------- 2025 ----------------
@@ -166,7 +198,7 @@ window.PUBLICATIONS = [
     authors: "Zishen Wan, Yuhang Du, Mohamed Ibrahim, Jiayi Qian, Jason Jabbour, Yang (Katie) Zhao, Tushar Krishna, Arijit Raychowdhury, Vijay Janapa Reddi",
     venue: "ASPLOS", venueFull: "ACM International Conference on Architectural Support for Programming Languages and Operating Systems",
     year: 2025, type: "conference", tags: ["embodied"], selected: true,
-    awards: ["Best Paper Award, DARPA SRC JUMP 2.0 (2025)", "Industry-Academia Partnership Highlight"],
+    awards: ["Best Paper Award, DARPA SRC JUMP 2.0 (2025)", "First Place, DAC PhD Forum (2025)", "Industry-Academia Partnership Highlight"],
     links: {
       Paper: "https://dl.acm.org/doi/pdf/10.1145/3676641.3716016",
       Slides: "https://zishenwan.github.io/publication/2025-04-02_ASPLOS25_ReCA_slide.pdf",
@@ -180,7 +212,7 @@ window.PUBLICATIONS = [
     authors: "Zishen Wan*, Hanchen Yang*, Ritik Raj*, Che-Kai Liu, Ananda Samajdar, Arijit Raychowdhury, Tushar Krishna",
     venue: "HPCA", venueFull: "IEEE International Symposium on High-Performance Computer Architecture",
     year: 2025, type: "conference", tags: ["cognitive"], selected: true,
-    awards: ["Best Paper Award, DARPA SRC JUMP 2.0 (2024)"],
+    awards: ["Best Paper Award, DARPA SRC JUMP 2.0 (2024)", "3rd Place, ACM SIGMICRO Student Research Competition (2024)"],
     links: {
       Paper: "https://arxiv.org/pdf/2503.01162",
       Website: "https://effi-nesy.github.io/",
@@ -234,7 +266,7 @@ window.PUBLICATIONS = [
   {
     id: "scalesim",
     title: "SCALE-Sim v3: A Modular Cycle-Accurate Systolic Accelerator Simulator for End-to-End System Analysis",
-    authors: "Ritik Raj, Sarbartha Banerjee*, Nikhil Srinivas*, Zishen Wan*, Jianming Tong*, Ananda Samajdar, Tushar Krishna",
+    authors: "Ritik Raj, Sarbartha Banerjee*, Nikhil Chandra Boopalam Srinivas*, Zishen Wan*, Jianming Tong*, Ananda Samajdar, Tushar Krishna",
     venue: "ISPASS", venueFull: "IEEE International Symposium on Performance Analysis of Systems and Software",
     year: 2025, type: "conference", tags: ["arch2"],
     links: { Paper: "https://arxiv.org/pdf/2504.15377" },
@@ -256,11 +288,43 @@ window.PUBLICATIONS = [
     links: {},
   },
   {
+    id: "iscas25",
+    title: "Characterization and Mitigation of ADC Noise by Reference Tuning in RRAM-Based Compute-In-Memory",
+    authors: "Ying-Hao Wei*, Zishen Wan*, Brian Crafton, Samuel Spetalnick, Arijit Raychowdhury",
+    venue: "ISCAS", venueFull: "IEEE International Symposium on Circuits and Systems",
+    year: 2025, type: "conference", tags: ["silicon"],
+    links: { Paper: "https://arxiv.org/pdf/2502.05948" },
+  },
+  {
+    id: "ieee-micro-matcha",
+    title: "Sipping Matcha of Security: A Fireside Chat With Mengjia Yan",
+    authors: "Jianming Tong, Zishen Wan",
+    venue: "IEEE Micro", venueFull: "IEEE Micro",
+    year: 2025, type: "journal", tags: [],
+    links: { Paper: "https://ieeexplore.ieee.org/document/11072006" },
+  },
+  {
+    id: "annie",
+    title: "ANNIE: Be Careful of Your Robots",
+    authors: "Yiyang Huang, Zixuan Wang, Zishen Wan, Yapeng Tian, Haobo Xu, Yinhe Han, Yiming Gan",
+    venue: "arXiv", venueFull: "arXiv preprint",
+    year: 2025, type: "preprint", tags: ["embodied"],
+    links: { Paper: "https://arxiv.org/pdf/2509.03383" },
+  },
+  {
+    id: "addt",
+    title: "ADDT: A Digital Twin Framework for Proactive Safety Validation in Autonomous Driving Systems",
+    authors: "Bo Yu*, Chaoran Yuan*, Zishen Wan*, Jie Tang, Fadi Kurdahi, Shaoshan Liu",
+    venue: "arXiv", venueFull: "arXiv preprint",
+    year: 2025, type: "preprint", tags: ["embodied"],
+    links: { Paper: "https://arxiv.org/pdf/2504.09461" },
+  },
+  {
     id: "neus25",
     title: "Efficient Processing of Neuro-Symbolic AI: A Tutorial and Cross-Layer Co-Design Case Study",
-    authors: "Zishen Wan, et al.",
+    authors: "Zishen Wan, Che-Kai Liu, Hanchen Yang, Ritik Raj, Arijit Raychowdhury, Tushar Krishna",
     venue: "NeuS", venueFull: "International Workshop on Neuro-Symbolic Systems",
-    year: 2025, type: "conference", tags: ["cognitive"], note: "Oral presentation",
+    year: 2025, type: "conference", tags: ["cognitive"], note: "Oral presentation (top 3%)",
     links: { Paper: "https://neus-2025.github.io/files/papers/paper_68.pdf" },
   },
 
@@ -336,7 +400,7 @@ window.PUBLICATIONS = [
   {
     id: "robotperf",
     title: "RobotPerf: An Open-Source, Vendor-Agnostic Benchmarking Suite for Evaluating Robotics Computing System Performance",
-    authors: "Victor Mayoral-Vilches, Jason Jabbour, Yu-Shun Hsiao, Zishen Wan, et al., Sabrina M. Neuman, Brian Plancher, Vijay Janapa Reddi",
+    authors: "Victor Mayoral-Vilches, Jason Jabbour, Yu-Shun Hsiao, Zishen Wan, Alejandra Martinez-Farina, Martino Crespo-Alvarez, Matthew Stewart, Juan Manuel Reina-Munoz, Prateek Nagras, Gaurav Vikhe, Mohammad Bakhshalipour, Martin Pinzger, Stefan Rass, Smruti Panigrahi, Giulio Corradi, Niladri Roy, Phillip B. Gibbons, Sabrina M. Neuman, Brian Plancher, Vijay Janapa Reddi",
     venue: "ICRA", venueFull: "IEEE International Conference on Robotics and Automation",
     year: 2024, type: "conference", tags: ["embodied"],
     awards: ["Best Paper Award, IROS Robotics Benchmarking Workshop (2023)"],
@@ -366,6 +430,14 @@ window.PUBLICATIONS = [
     year: 2024, type: "conference", tags: ["cognitive", "silicon"],
     links: { Paper: "https://zishenwan.github.io/publication/ESWEEK24_NSAI_LLM.pdf" },
   },
+  {
+    id: "jats24",
+    title: "Benchmarking Test-Time DNN Adaptation at Edge with Compute-In-Memory",
+    authors: "Zhenkun Fan*, Zishen Wan*, Che-Kai Liu, Anni Lu, Kshitij Bhardwaj, Arijit Raychowdhury",
+    venue: "JATS", venueFull: "ACM Journal on Autonomous Transportation Systems",
+    year: 2024, type: "journal", tags: ["silicon"],
+    links: { Paper: "https://dl.acm.org/doi/pdf/10.1145/3665898" },
+  },
 
   // ---------------- 2023 ----------------
   {
@@ -378,6 +450,14 @@ window.PUBLICATIONS = [
       "Paper (ISSCC)": "https://ieeexplore.ieee.org/abstract/document/10067544",
       "Paper (JSSC)": "https://ieeexplore.ieee.org/abstract/document/10210581",
     },
+  },
+  {
+    id: "see-mcam",
+    title: "SEE-MCAM: Scalable Multi-Bit FeFET Content Addressable Memories for Energy-Efficient Associative Search",
+    authors: "Shengxi Shou, Che-Kai Liu, Sanggeon Yun, Zishen Wan, Kai Ni, Mohsen Imani, X. Sharon Hu, Jianyi Yang, Cheng Zhuo, Xunzhao Yin",
+    venue: "ICCAD", venueFull: "IEEE/ACM International Conference on Computer-Aided Design",
+    year: 2023, type: "conference", tags: ["silicon"],
+    links: { Paper: "https://arxiv.org/pdf/2310.04940.pdf" },
   },
   {
     id: "berry",
@@ -401,6 +481,14 @@ window.PUBLICATIONS = [
       "Paper (TCAD)": "https://ieeexplore.ieee.org/document/10315202",
       Code: "https://github.com/harvard-edge/MAVBench/tree/mavfi",
     },
+  },
+  {
+    id: "lane-date23",
+    title: "Real-Time Fully Unsupervised Domain Adaptation for Lane Detection in Autonomous Driving",
+    authors: "Kshitij Bhardwaj, Zishen Wan, Arijit Raychowdhury, Ryan Goldhahn",
+    venue: "DATE", venueFull: "Design, Automation and Test in Europe Conference",
+    year: 2023, type: "conference", tags: ["embodied"],
+    links: { Paper: "https://arxiv.org/pdf/2306.16660.pdf" },
   },
 
   // ---------------- 2022 ----------------
@@ -428,6 +516,14 @@ window.PUBLICATIONS = [
     venue: "DAC", venueFull: "ACM/IEEE Design Automation Conference",
     year: 2022, type: "conference", tags: ["silicon"],
     links: { Paper: "https://dl.acm.org/doi/abs/10.1145/3489517.3530526" },
+  },
+  {
+    id: "quarl",
+    title: "QuaRL: Quantization for Fast and Environmentally Sustainable Reinforcement Learning",
+    authors: "Srivatsan Krishnan, Max Lam, Sharad Chitlangia, Zishen Wan, Gabriel Barth-Maron, Aleksandra Faust, Vijay Janapa Reddi",
+    venue: "TMLR", venueFull: "Transactions on Machine Learning Research",
+    year: 2022, type: "journal", tags: ["embodied"],
+    links: { Paper: "https://arxiv.org/pdf/1910.01055.pdf" },
   },
   {
     id: "cicc22",
@@ -488,6 +584,22 @@ window.PUBLICATIONS = [
     year: 2021, type: "journal", tags: ["embodied"],
     links: { Paper: "https://zishenwan.github.io/publication/CAS2021.pdf" },
   },
+  {
+    id: "ielas",
+    title: "iELAS: An ELAS-Based Energy-Efficient Accelerator for Real-Time Stereo Matching on FPGA Platform",
+    authors: "Tian Gao, Zishen Wan, Yuyang Zhang, Bo Yu, Yanjun Zhang, Shaoshan Liu, Arijit Raychowdhury",
+    venue: "AICAS", venueFull: "IEEE International Conference on Artificial Intelligence Circuits and Systems",
+    year: 2021, type: "conference", tags: ["embodied", "silicon"],
+    links: { Paper: "https://arxiv.org/pdf/2104.05112.pdf" },
+  },
+  {
+    id: "quad-camera",
+    title: "An Energy-Efficient Quad-Camera Visual System for Autonomous Machines on FPGA Platform",
+    authors: "Zishen Wan, Yuyang Zhang, Arijit Raychowdhury, Bo Yu, Yanjun Zhang, Shaoshan Liu",
+    venue: "AICAS", venueFull: "IEEE International Conference on Artificial Intelligence Circuits and Systems",
+    year: 2021, type: "conference", tags: ["embodied", "silicon"],
+    links: {},
+  },
 
   // ---------------- 2020 ----------------
   {
@@ -523,8 +635,8 @@ window.BOOKS = [
   {
     title: "Machine Learning Systems: Principles and Practices of Engineering Artificially Intelligent Systems",
     authors: "Vijay Janapa Reddi, et al. (incl. Zishen Wan)",
-    venue: "Open-source textbook, Harvard University",
-    year: 2024,
+    venue: "Open-source online textbook, pp. 1-2602 (27K+ GitHub stars)",
+    year: 2025,
     links: { Book: "https://harvard-edge.github.io/cs249r_book/", GitHub: "https://github.com/harvard-edge/cs249r_book" },
     blurb: "An open-source, community-driven textbook on engineering complete ML systems: data, model design, optimization, acceleration, security hardening, and deployment.",
   },
