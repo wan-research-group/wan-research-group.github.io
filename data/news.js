@@ -86,7 +86,17 @@ window.NEWS = [
   {
     date: "2026-02",
     tag: "Paper",
-    text: "[Faster-MoA](https://arxiv.org/pdf/2512.18126) (**DAC 2026**), [context-switchable monolithic 3D FPGA with ferroelectric inverters](https://zishenwan.github.io/publication/FCCM26_Ferro3D_FPGA.pdf) (**FCCM 2026**), and our [study of energy-based models for System-2 AI](https://zishenwan.github.io/publication/ISPASS26_EBM_Characterization.pdf) (**ISPASS 2026**) are accepted.",
+    text: "[Faster-MoA](https://arxiv.org/pdf/2512.18126), low-latency mixture-of-agents serving with early exit and agent-aware prefill-decode overlap, is accepted to **DAC 2026**.",
+  },
+  {
+    date: "2026-02",
+    tag: "Paper",
+    text: "[Enabling context-switchable monolithic 3D FPGA design using bistable ferroelectric inverters](https://zishenwan.github.io/publication/FCCM26_Ferro3D_FPGA.pdf) is accepted to **FCCM 2026**.",
+  },
+  {
+    date: "2026-02",
+    tag: "Paper",
+    text: "[Towards System-2 AI](https://zishenwan.github.io/publication/ISPASS26_EBM_Characterization.pdf), workloads and characterizations of energy-based models, is accepted to **ISPASS 2026**.",
   },
   {
     date: "2026-01",
@@ -113,7 +123,22 @@ window.NEWS = [
   {
     date: "2025-11",
     tag: "Paper",
-    text: "[REASON](https://arxiv.org/pdf/2601.20784) (**HPCA 2026**), [CREATE](https://dl.acm.org/doi/pdf/10.1145/3779212.3790147) (**ASPLOS 2026**), and FortiSky with IBM Research and [SATA](https://arxiv.org/pdf/2601.20267) with TSMC Research (**DATE 2026**) are accepted.",
+    text: "[REASON](https://arxiv.org/pdf/2601.20784), accelerating probabilistic logical reasoning for scalable neuro-symbolic intelligence, is accepted to **HPCA 2026**.",
+  },
+  {
+    date: "2025-11",
+    tag: "Paper",
+    text: "[CREATE](https://dl.acm.org/doi/pdf/10.1145/3779212.3790147), cross-layer resilience optimization for efficient and reliable embodied AI systems, is accepted to **ASPLOS 2026**.",
+  },
+  {
+    date: "2025-11",
+    tag: "Paper",
+    text: "[FortiSky](https://zishenwan.github.io/publication/DATE26_FortiSky.pdf), enhancing adversarial and bit-error robustness for autonomous systems (with IBM Research), is accepted to **DATE 2026**.",
+  },
+  {
+    date: "2025-11",
+    tag: "Paper",
+    text: "[SATA](https://arxiv.org/pdf/2601.20267), sparsity-aware scheduling for selective token attention (with TSMC Research), is accepted to **DATE 2026**.",
   },
   {
     date: "2025-11",
@@ -153,7 +178,12 @@ window.NEWS = [
   {
     date: "2025-06",
     tag: "Paper",
-    text: "[Compositional AI Beyond LLMs](https://dl.acm.org/doi/pdf/10.1145/3760250.3762235) is accepted to **ASPLOS 2026**, and [HyDra](https://arxiv.org/pdf/2504.14020) to **ICCAD 2025**.",
+    text: "[Compositional AI Beyond LLMs](https://dl.acm.org/doi/pdf/10.1145/3760250.3762235), system implications of neuro-symbolic-probabilistic architectures, is accepted to **ASPLOS 2026**.",
+  },
+  {
+    date: "2025-06",
+    tag: "Paper",
+    text: "[HyDra](https://arxiv.org/pdf/2504.14020), a SOT-CAM based vector symbolic macro for hyperdimensional computing, is accepted to **ICCAD 2025**.",
   },
   {
     date: "2025-06",
@@ -183,7 +213,12 @@ window.NEWS = [
   {
     date: "2025-03",
     tag: "Paper",
-    text: "[EmbodiedPerf](https://arxiv.org/pdf/2504.18945) on embodied AI system characterization and [SCALE-Sim v3](https://arxiv.org/pdf/2504.15377) are accepted to **ISPASS 2025**.",
+    text: "[EmbodiedPerf](https://arxiv.org/pdf/2504.18945), system-level analysis of generative AI in embodied systems, is accepted to **ISPASS 2025**.",
+  },
+  {
+    date: "2025-03",
+    tag: "Paper",
+    text: "[SCALE-Sim v3](https://arxiv.org/pdf/2504.15377), a modular cycle-accurate systolic accelerator simulator, is accepted to **ISPASS 2025**.",
   },
   {
     date: "2025-03",
@@ -198,7 +233,22 @@ window.NEWS = [
   {
     date: "2025-02",
     tag: "Paper",
-    text: "[ReCA](https://dl.acm.org/doi/pdf/10.1145/3676641.3716016) and [OctoCache](https://dl.acm.org/doi/pdf/10.1145/3676641.3716263) are accepted to **ASPLOS 2025**; [NSFlow](https://arxiv.org/pdf/2504.19323) and [ReaLM](https://arxiv.org/pdf/2503.24053) to **DAC 2025**.",
+    text: "[ReCA](https://dl.acm.org/doi/pdf/10.1145/3676641.3716016), integrated acceleration for real-time and efficient cooperative embodied autonomous agents, is accepted to **ASPLOS 2025**.",
+  },
+  {
+    date: "2025-02",
+    tag: "Paper",
+    text: "[OctoCache](https://dl.acm.org/doi/pdf/10.1145/3676641.3716263), caching voxels for accelerating 3D occupancy mapping in autonomous systems, is accepted to **ASPLOS 2025**.",
+  },
+  {
+    date: "2025-02",
+    tag: "Paper",
+    text: "[NSFlow](https://arxiv.org/pdf/2504.19323), an end-to-end FPGA framework with scalable dataflow architecture for neuro-symbolic AI, is accepted to **DAC 2025**.",
+  },
+  {
+    date: "2025-02",
+    tag: "Paper",
+    text: "[ReaLM](https://arxiv.org/pdf/2503.24053), reliable and efficient LLM inference with statistical algorithm-based fault tolerance, is accepted to **DAC 2025**.",
   },
   {
     date: "2025-02",
@@ -270,7 +320,12 @@ window.NEWS = [
   {
     date: "2024-05",
     tag: "Paper",
-    text: "[Neuro-Symbolic Architecture Meets LLMs: A Memory-Centric Perspective](https://zishenwan.github.io/publication/ESWEEK24_NSAI_LLM.pdf) is accepted to **ESWEEK 2024**, and our benchmark of test-time DNN adaptation with compute-in-memory to **ACM JATS**.",
+    text: "[Neuro-Symbolic Architecture Meets LLMs: A Memory-Centric Perspective](https://zishenwan.github.io/publication/ESWEEK24_NSAI_LLM.pdf) is accepted to **ESWEEK 2024**.",
+  },
+  {
+    date: "2024-05",
+    tag: "Paper",
+    text: "Our benchmark of test-time DNN adaptation at the edge with compute-in-memory is accepted to **ACM JATS**.",
   },
   {
     date: "2024-05",
@@ -332,7 +387,17 @@ window.NEWS = [
   {
     date: "2023-11",
     tag: "Paper",
-    text: "[MulBERRY](https://dl.acm.org/doi/pdf/10.1145/3620665.3640420) and [ORIANNA](https://dl.acm.org/doi/pdf/10.1145/3620665.3640379) are accepted to **ASPLOS 2024**, and [H3DFACT](https://arxiv.org/pdf/2404.04173.pdf) to **DATE 2024**.",
+    text: "[MulBERRY](https://dl.acm.org/doi/pdf/10.1145/3620665.3640420), enabling bit-error robustness for energy-efficient multi-agent autonomous systems, is accepted to **ASPLOS 2024**.",
+  },
+  {
+    date: "2023-11",
+    tag: "Paper",
+    text: "[ORIANNA](https://dl.acm.org/doi/pdf/10.1145/3620665.3640379), an accelerator generation framework for optimization-based robotic applications, is accepted to **ASPLOS 2024**.",
+  },
+  {
+    date: "2023-11",
+    tag: "Paper",
+    text: "[H3DFACT](https://arxiv.org/pdf/2404.04173.pdf), heterogeneous 3D integrated compute-in-memory for factorization with holographic representations, is accepted to **DATE 2024**.",
   },
   {
     date: "2023-10",
@@ -347,7 +412,12 @@ window.NEWS = [
   {
     date: "2023-07",
     tag: "Paper",
-    text: "SEE-MCAM, scalable multi-bit FeFET CAM for energy-efficient associative search, is accepted to **ICCAD 2023**, and our [heterogeneous RRAM/SRAM SoC](https://ieeexplore.ieee.org/abstract/document/10210581) to **IEEE JSSC**.",
+    text: "[SEE-MCAM](https://arxiv.org/pdf/2310.04940.pdf), scalable multi-bit FeFET CAM for energy-efficient associative search, is accepted to **ICCAD 2023**.",
+  },
+  {
+    date: "2023-07",
+    tag: "Paper",
+    text: "Our [heterogeneous RRAM in-memory and SRAM near-memory SoC](https://ieeexplore.ieee.org/abstract/document/10210581) for fused frame and event-based target tracking is accepted to **IEEE JSSC**.",
   },
   {
     date: "2023-05",
@@ -357,7 +427,12 @@ window.NEWS = [
   {
     date: "2023-05",
     tag: "Paper",
-    text: "VPP, the vulnerability-proportional protection paradigm, is presented at the DOSSA-5 Workshop at **ISCA 2023**, and our neuro-symbolic AI survey at the Next-Gen AI System Workshop at **MLSys 2023**.",
+    text: "VPP, the vulnerability-proportional protection paradigm toward reliable autonomous machines, is presented at the DOSSA-5 Workshop at **ISCA 2023**.",
+  },
+  {
+    date: "2023-05",
+    tag: "Paper",
+    text: "Our survey and prospective on neuro-symbolic AI toward cognitive AI systems is presented at the Next-Gen AI System Workshop at **MLSys 2023**.",
   },
   {
     date: "2023-05",
@@ -384,7 +459,12 @@ window.NEWS = [
   {
     date: "2022-12",
     tag: "Paper",
-    text: "[MAVFI](https://arxiv.org/pdf/2105.12882.pdf), an end-to-end fault analysis framework for micro aerial vehicles, and [real-time unsupervised domain adaptation for lane detection](https://arxiv.org/pdf/2306.16660.pdf) are accepted to **DATE 2023**.",
+    text: "[MAVFI](https://arxiv.org/pdf/2105.12882.pdf), an end-to-end fault analysis framework with anomaly detection and recovery for micro aerial vehicles, is accepted to **DATE 2023**.",
+  },
+  {
+    date: "2022-12",
+    tag: "Paper",
+    text: "[Real-time fully unsupervised domain adaptation for lane detection](https://arxiv.org/pdf/2306.16660.pdf) in autonomous driving is accepted to **DATE 2023**.",
   },
   {
     date: "2022-11",
@@ -414,7 +494,12 @@ window.NEWS = [
   {
     date: "2022-07",
     tag: "Paper",
-    text: "[Analyzing and improving resilience of autonomous systems](https://zishenwan.github.io/publication/Wan2022ICCAD.pdf) is accepted to **ICCAD 2022**, and [AutoPilot](https://ieeexplore.ieee.org/document/9923818), automatic domain-specific SoC design for autonomous UAVs, to **MICRO 2022**.",
+    text: "[Analyzing and improving resilience and robustness of autonomous systems](https://zishenwan.github.io/publication/Wan2022ICCAD.pdf) is accepted to **ICCAD 2022**.",
+  },
+  {
+    date: "2022-07",
+    tag: "Paper",
+    text: "[AutoPilot](https://ieeexplore.ieee.org/document/9923818), automatic domain-specific SoC design for autonomous UAVs, is accepted to **MICRO 2022**.",
   },
   {
     date: "2022-06",
@@ -449,7 +534,12 @@ window.NEWS = [
   {
     date: "2022-01",
     tag: "Paper",
-    text: "Our [energy-efficient, runtime-reconfigurable FPGA accelerator for robotic localization](https://arxiv.org/pdf/2202.08952.pdf) is accepted to **CICC 2022**, and an invited paper on [circuit and system technologies for edge robotics](https://zishenwan.github.io/publication/ASPDAC2022.pdf) appears at ASP-**DAC 2022**.",
+    text: "Our [energy-efficient, runtime-reconfigurable FPGA accelerator for robotic localization](https://arxiv.org/pdf/2202.08952.pdf) is accepted to **CICC 2022**.",
+  },
+  {
+    date: "2022-01",
+    tag: "Paper",
+    text: "An invited paper on [circuit and system technologies for energy-efficient edge robotics](https://zishenwan.github.io/publication/ASPDAC2022.pdf) appears at **ASP-DAC 2022**.",
   },
   {
     date: "2022-01",
@@ -481,7 +571,12 @@ window.NEWS = [
   {
     date: "2021-04",
     tag: "Paper",
-    text: "An energy-efficient visual system for autonomous machines and [iELAS](https://arxiv.org/pdf/2104.05112.pdf), an ELAS-based stereo matching accelerator, are accepted to **AICAS 2021**.",
+    text: "An energy-efficient visual system for autonomous machines on FPGA is accepted to **AICAS 2021**.",
+  },
+  {
+    date: "2021-04",
+    tag: "Paper",
+    text: "[iELAS](https://arxiv.org/pdf/2104.05112.pdf), an ELAS-based energy-efficient accelerator for real-time stereo matching, is accepted to **AICAS 2021**.",
   },
   {
     date: "2021-03",
