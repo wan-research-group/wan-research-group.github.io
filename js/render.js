@@ -26,12 +26,13 @@
     return `${MONTHS[parseInt(m, 10) - 1]} ${y}`;
   };
 
-  // Names to bold in author lists: PI + all lab members.
+  // Names to bold in author lists: PI, all current members, and past students.
   const labNames = (() => {
     const names = [];
     if (window.PEOPLE) {
       names.push(window.PEOPLE.pi.name);
       (window.PEOPLE.groups || []).forEach((g) => (g.members || []).forEach((m) => names.push(m.name)));
+      (window.PEOPLE.pastMentees || []).forEach((m) => names.push(m.name));
     }
     return names;
   })();
@@ -190,10 +191,10 @@
   const AREA_LABELS = {
     all: "All",
     selected: "Selected",
-    embodied: "Embodied & Agentic Systems",
-    cognitive: "Cognitive & Neuro-Symbolic",
-    silicon: "Silicon & Hardware",
-    arch2: "AI for System Design",
+    systems: "Systems",
+    architecture: "Architecture",
+    silicon: "Silicon & Circuits",
+    arch2: "Agentic AI for Design",
   };
 
   function renderPublicationsPage(listEl, controlsEl) {

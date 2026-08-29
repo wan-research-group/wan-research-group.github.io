@@ -46,7 +46,12 @@ window.NEWS = [
   {
     date: "2026-06",
     tag: "Workshop",
-    text: "We co-organize the tutorial and workshop [Architecture 2.0: Agentic AI for Computing Systems Design](https://harvard-edge.github.io/isca-26-arch-2-workshop/) and the [VisArch](https://sai-lab-nyu.github.io/VisArch_ISCA26/) workshop at **ISCA 2026**.",
+    text: "We co-organize the tutorial and workshop [Architecture 2.0: Agentic AI for Computing Systems Design](https://harvard-edge.github.io/isca-26-arch-2-workshop/) at **ISCA 2026**.",
+  },
+  {
+    date: "2026-06",
+    tag: "Workshop",
+    text: "We co-organize the workshop [VisArch: Systems and Architectures for Visual Computing, AR/VR, and Embodied Intelligence](https://sai-lab-nyu.github.io/VisArch_ISCA26/) at **ISCA 2026**.",
   },
   {
     date: "2026-06",
