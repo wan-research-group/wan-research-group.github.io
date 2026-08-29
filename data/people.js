@@ -11,9 +11,9 @@ window.PEOPLE = {
     role: "Assistant Professor",
     photo: "assets/zishen_wan.jpg",
     bio: [
-      "Zishen Wan is an Assistant Professor of Computer Science at Columbia University, where he directs the EMBARC Lab. He is a computer architect and SoC designer working across computer architecture, computer systems, and chip/VLSI design. His group develops cross-layer computing systems that span software and system design, architecture, and silicon for emerging AI workloads, including embodied, physical, neuro-symbolic, and agentic AI, and develops agentic AI methods for the design, optimization, and verification of computing systems.",
-      "Before joining Columbia, he was a Postdoctoral Fellow at Harvard University, working with Prof. Vijay Janapa Reddi. He received his Ph.D. from Georgia Tech in 2025, advised by Prof. Arijit Raychowdhury and Prof. Tushar Krishna. His dissertation, “Tailored Computing: Cross-Layer System, Architecture, and Silicon Co-Design for Physical Intelligence,” received the ACM SIGDA Outstanding Ph.D. Dissertation Award, the FCCM Outstanding Ph.D. Dissertation Award, and Georgia Tech's Colonel Oscar P. Cleaver Award.",
-      "His research has been recognized with Best Paper Awards from DAC, IEEE Computer Architecture Letters, and DARPA SRC JUMP 2.0, IEEE Micro Top Picks recognition, and first-place honors at the DAC Ph.D. Forum and the ACM Student Research Competition, along with the WAIC Yunfan Award and the Baidu and Qualcomm Fellowships. He was selected as both an ML and Systems Rising Star and a Cyber-Physical Systems Rising Star, and his work involves close collaboration with IBM, TSMC, Intel, and Google.",
+      "Zishen Wan is an Assistant Professor of Computer Science at Columbia University, where he directs the EMBARC Lab. He is a computer architect and SoC designer working across computer architecture, computer systems, and chip/VLSI design. His group develops cross-layer computing systems that span software system, hardware architecture, and silicon for emerging AI workloads, including embodied, physical, neuro-symbolic, and agentic AI. His group also develops agentic AI methods for the design, optimization, and verification of computing systems.",
+      "Before joining Columbia University, he was a Postdoctoral Fellow at Harvard University, working with Prof. Vijay Janapa Reddi. He received his Ph.D. from Georgia Tech in 2025, advised by Prof. Arijit Raychowdhury and Prof. Tushar Krishna. His dissertation, “Tailored Computing: Cross-Layer System, Architecture, and Silicon Co-Design for Physical Intelligence,” received the ACM SIGDA Outstanding Ph.D. Dissertation Award, the FCCM Outstanding Ph.D. Dissertation Award, and Georgia Tech's Colonel Oscar P. Cleaver Award.",
+      "His research has been recognized with Best Paper Awards from DAC, IEEE Computer Architecture Letters, and DARPA SRC JUMP 2.0, as well as IEEE Micro Top Picks and ACM SIGDA Research Highlights. He was awarded first-place honors at DAC Ph.D. Forum and ACM Student Research Competition, along with WAIC Yunfan Award and Baidu and Qualcomm Fellowships. He was selected as ML and Systems Rising Star and Cyber-Physical Systems Rising Star, and his work involves close collaboration with IBM, TSMC, Intel, Google, NVIDIA, Qualcomm, and Samsung.",
     ],
     email: "zw3306@columbia.edu",
     office: "522 CSB, 500 West 120th Street, New York, NY 10027",
@@ -42,7 +42,7 @@ window.PEOPLE = {
           note: "co-advised with Prof. Tushar Krishna",
           edu: "B.S., Tsinghua University",
           photo: "assets/jiayi_qian.png",
-          interests: "ML systems for agentic & generative AI; accelerators for embodied and neuro-symbolic AI",
+          interests: "AI for computer architecture; ML systems for agentic AI; Accelerators for physical and neuro-symbolic AI",
           links: {
             Website: "https://jiayi-19.github.io/",
             Scholar: "https://scholar.google.com/citations?user=-yGPXHkAAAAJ&hl=en",

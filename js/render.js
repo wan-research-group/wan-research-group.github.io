@@ -123,6 +123,42 @@
     el.innerHTML = `<div class="news-list">${items.map(newsItemHTML).join("")}</div>`;
   }
 
+  // Full news archive: tag filters + year grouping.
+  function renderNewsPage(listEl, controlsEl) {
+    const TAGS = ["All", "Lab", "Award", "Paper", "Talk", "Workshop", "Teaching", "Service", "Book"];
+    let tag = "All";
+
+    function draw() {
+      const items = window.NEWS.filter((n) => tag === "All" || n.tag === tag);
+      const byYear = {};
+      items.forEach((n) => (byYear[n.date.slice(0, 4)] = byYear[n.date.slice(0, 4)] || []).push(n));
+      const years = Object.keys(byYear).sort((a, b) => b - a);
+      listEl.innerHTML = years
+        .map(
+          (y) =>
+            `<div class="pub-year">${y}</div>` +
+            `<div class="news-list">${byYear[y].map(newsItemHTML).join("")}</div>`
+        )
+        .join("");
+      controlsEl.querySelector(".pub-count").textContent =
+        `${items.length} item${items.length === 1 ? "" : "s"}`;
+    }
+
+    controlsEl.innerHTML =
+      TAGS.map(
+        (t) => `<button class="pub-filter ${t === "All" ? "active" : ""}" data-tag="${t}">${t}</button>`
+      ).join("") + `<span class="pub-count"></span>`;
+
+    controlsEl.querySelectorAll(".pub-filter").forEach((btn) =>
+      btn.addEventListener("click", () => {
+        tag = btn.dataset.tag;
+        controlsEl.querySelectorAll(".pub-filter").forEach((b) => b.classList.toggle("active", b === btn));
+        draw();
+      })
+    );
+    draw();
+  }
+
   // ---------- publications ----------
 
   function pubItemHTML(p) {
@@ -347,7 +383,10 @@
       renderSelectedPubs(document.getElementById("home-pubs"));
     }
     if (page === "news") {
-      renderNews(document.getElementById("all-news"));
+      renderNewsPage(
+        document.getElementById("all-news"),
+        document.getElementById("news-controls")
+      );
     }
     if (page === "publications") {
       renderPublicationsPage(
