@@ -233,6 +233,7 @@ h1.page-title { font-size: 42px; line-height: 1.15; margin-bottom: 14px; }
 .news-tag[data-tag="Award"] { color: var(--gold); background: var(--gold-bg); }
 .news-tag[data-tag="Lab"] { color: #fff; background: var(--accent); }
 .news-text { color: var(--ink); line-height: 1.6; }
+.news-text b { font-weight: 600; }
 
 /* ---------------- publications ---------------- */
 
