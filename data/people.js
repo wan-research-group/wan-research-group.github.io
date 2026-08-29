@@ -68,6 +68,7 @@ window.PEOPLE = {
         {
           name: "Yichong Zhang",
           role: "B.S. Student, Tsinghua University",
+          photo: "assets/yichong_zhang.JPG",
           links: {},
         },
       ],
