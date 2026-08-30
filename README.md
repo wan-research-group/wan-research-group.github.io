@@ -28,10 +28,10 @@ Then open http://localhost:8930. (Opening `index.html` directly in a browser als
 
 One-time setup:
 
-1. Create a GitHub organization (e.g. `wan-lab`), then a repository named `wan-lab.github.io` inside it.
+1. Create a GitHub organization named `wan-research-group`, then a repository named `wan-research-group.github.io` inside it.
 2. Push this folder to that repository (`main` branch).
 3. In the repo: Settings → Pages → Source: “Deploy from a branch”, branch `main`, folder `/ (root)`.
-4. The site appears at `https://wan-lab.github.io/` within a minute or two.
+4. The site appears at `https://wan-research-group.github.io/` within a minute or two.
 
 After that, publishing an update is just: commit → push.
 
