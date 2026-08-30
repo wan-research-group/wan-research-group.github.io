@@ -4,10 +4,10 @@
 // here and every page picks it up automatically.
 // ============================================================
 window.SITE = {
-  name: "EMBARC Lab",
-  shortName: "EMBARC",
-  fullName: "EMBARC Lab | Embodied-AI Architecture & Co-design",
-  expansion: "Embodied-AI Architecture & Co-design",
+  name: "Wan Lab",
+  shortName: "Wan",
+  fullName: "Wan Lab at Columbia University",
+  expansion: "Computing for AI, and AI for Computing",
   institution: "Columbia University",
   department: "Department of Computer Science",
   tagline: "Computing for AI, and AI for Computing, co-designed across architecture, systems, and silicon.",

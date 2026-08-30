@@ -1,6 +1,6 @@
-# EMBARC Lab Website
+# Wan Lab Website
 
-The website of the EMBARC Lab (Embodied-AI Architecture & Co-design) at Columbia University.
+The website of the Wan Lab at Columbia University.
 
 **Zero build tools.** Pure HTML/CSS/JS: every page works by opening the `.html` file directly or serving the folder statically. All content lives in `data/*.js`; to update the site you almost never touch HTML.
 
@@ -28,10 +28,10 @@ Then open http://localhost:8930. (Opening `index.html` directly in a browser als
 
 One-time setup:
 
-1. Create a GitHub organization (e.g. `embarc-lab`), then a repository named `embarc-lab.github.io` inside it.
+1. Create a GitHub organization (e.g. `wan-lab`), then a repository named `wan-lab.github.io` inside it.
 2. Push this folder to that repository (`main` branch).
 3. In the repo: Settings → Pages → Source: “Deploy from a branch”, branch `main`, folder `/ (root)`.
-4. The site appears at `https://embarc-lab.github.io/` within a minute or two.
+4. The site appears at `https://wan-lab.github.io/` within a minute or two.
 
 After that, publishing an update is just: commit → push.
 
@@ -58,5 +58,4 @@ assets/ ……… photos, favicon, figures
 
 - [ ] Add paper links for TECS'26, Hawkeye (DL4C'26), and the AICAS'21 quad-camera paper when available
 
-- [ ] Confirm lab name (currently **EMBARC**; change in `data/site.js` + the `<title>`/meta tags of the six HTML pages, and `sitemap.xml`)
 - [ ] `join.html`: verify the Columbia CS PhD application link/deadline wording before December

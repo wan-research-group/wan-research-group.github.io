@@ -1,5 +1,5 @@
 /* ============================================================
-   EMBARC Lab shared rendering script.
+   Wan Lab shared rendering script.
    Reads data from data/*.js and renders nav, footer, and the
    page-specific sections. Pages opt in via <body data-page="...">.
    ============================================================ */
