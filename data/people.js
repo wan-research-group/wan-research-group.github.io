@@ -91,7 +91,7 @@ window.PEOPLE = {
   // ---- Past mentees (compact table) ----
   // Students Prof. Wan mentored before/outside the lab, with where they went next.
   pastMenteesNote:
-    "Students we have had the privilege of working with, and where they went next.",
+    "Visiting and intern students we have had the privilege of working with, and where they went next.",
   pastMentees: [
     {
       name: "Chenyu Wang", years: "2024-2026",
