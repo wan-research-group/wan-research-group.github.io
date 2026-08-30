@@ -14,7 +14,7 @@ window.RESEARCH = [
     short:
       "Domain-specific and adaptive architectures for embodied, neuro-symbolic, and reasoning workloads: accelerators, memory systems, and heterogeneous platforms.",
     long:
-      "Emerging intelligence does not run well on yesterday's hardware. We design domain-specific and adaptive architectures for embodied, neuro-symbolic, and reasoning workloads, spanning accelerators, memory systems, and heterogeneous platforms, so that perception, planning, and “System-2” reasoning are no longer the bottlenecks of intelligent machines. In the reverse direction, we also use AI agents for architecture design space exploration, generation, and evaluation.",
+      "Emerging intelligence does not run well on yesterday's hardware. We design domain-specific and adaptive architectures for physical, embodied, neuro-symbolic, and reasoning workloads, spanning accelerators, memory systems, and heterogeneous platforms, so that perception, planning, and “System-2” reasoning are no longer the bottlenecks of intelligent machines. In the reverse direction, we also use AI agents for architecture design space exploration, generation, and evaluation.",
     keywords: ["Accelerators", "Software-hardware co-design", "Heterogeneous architecture", "Memory", "Dataflow"],
     pubs: ["reason", "compositional-ai", "cogsys", "nsflow", "arborist", "rtgs", "autopilot"],
   },
