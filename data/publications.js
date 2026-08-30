@@ -93,7 +93,7 @@ window.PUBLICATIONS = [
     title: "Efficient Mixture-of-Agents Serving via Tree-Structured Routing, Adaptive Pruning, and Dependency-Aware Prefill-Decode Overlap",
     authors: "Zijun Wang, Yijiahao Qi, Hanqiu Chen, Zishen Wan, Gongjin Sun, Dongyang Li, Shuyi Pei, Cong (Callie) Hao",
     venue: "DAC", venueFull: "ACM/IEEE Design Automation Conference",
-    year: 2026, type: "conference", tags: ["systems"], selected: true,
+    year: 2026, type: "conference", tags: ["systems"], selected: true, featured: true,
     links: { Paper: "https://arxiv.org/pdf/2512.18126", Code: "https://github.com/sharc-lab/Faster-MoA" },
   },
   {
@@ -393,7 +393,7 @@ window.PUBLICATIONS = [
     title: "Algorithm-Hardware Co-Design of Distribution-Aware Logarithmic-Posit Encodings for Efficient DNN Inference",
     authors: "Akshat Ramachandran, Zishen Wan, Geonhwa Jeong, John Gustafson, Tushar Krishna",
     venue: "DAC", venueFull: "ACM/IEEE Design Automation Conference",
-    year: 2024, type: "conference", tags: ["architecture"],
+    year: 2024, type: "conference", tags: ["architecture"], featured: true,
     links: {
       Paper: "https://arxiv.org/pdf/2403.05465.pdf",
       Code: "https://github.com/georgia-tech-synergy-lab/LogarithmicPosit",
