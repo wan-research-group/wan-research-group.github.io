@@ -54,6 +54,8 @@ assets/ ……… photos, favicon, figures
 
 ## Content TODOs
 
+- [ ] `join.html`: add Electrical Engineering as a second PhD application route once the EE affiliation is approved
+
 - [ ] Add paper links for TECS'26, Hawkeye (DL4C'26), and the AICAS'21 quad-camera paper when available
 
 - [ ] Confirm lab name (currently **EMBARC**; change in `data/site.js` + the `<title>`/meta tags of the six HTML pages, and `sitemap.xml`)
