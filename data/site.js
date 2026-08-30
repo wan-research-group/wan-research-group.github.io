@@ -15,7 +15,7 @@ window.SITE = {
     "We are a research group at Columbia University building computing systems for emerging AI, and developing agentic AI that designs computing systems.",
   recruiting: true,
   recruitingNote:
-    "We are recruiting PhD students, postdocs, and student researchers.",
+    "We are recruiting PhD students, postdocs, and visiting students.",
   email: "zw3306@columbia.edu",
   address: "500 West 120th Street, New York, NY 10027",
   links: {

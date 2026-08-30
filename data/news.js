@@ -11,7 +11,7 @@ window.NEWS = [
   {
     date: "2026-08",
     tag: "Lab",
-    text: "Zishen joins the [Department of Computer Science at Columbia University](https://www.cs.columbia.edu/) as an Assistant Professor, and the Wan Lab officially launches! We are recruiting PhD students (Fall 2027), postdocs, and student researchers. See [Join Us](join.html).",
+    text: "Zishen joins the [Department of Computer Science at Columbia University](https://www.cs.columbia.edu/) as an Assistant Professor, and the Wan Lab officially launches! We are recruiting PhD students (Fall 2027), postdocs, and visiting students. See [Join Us](join.html).",
   },
   {
     date: "2026-07",

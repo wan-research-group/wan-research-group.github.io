@@ -8,7 +8,7 @@ The website of the Wan Lab at Columbia University.
 
 | Task | File | What to do |
 |---|---|---|
-| Add a paper | `data/publications.js` | Copy an entry to the top of the array. Set `venue`, `year`, `tags` (research area), `links`. Add `selected: true` to feature it on the home page (keep ~6-8 selected). |
+| Add a paper | `data/publications.js` | Copy an entry to the top of the array. Set `venue`, `year`, `tags` (research area), `links`. Add `selected: true` for the Selected filter (representative work), and `featured: true` to show it on the home page. |
 | Add news | `data/news.js` | Add an entry at the top. `[text](url)` inside `text` becomes a link. |
 | Add a member | `data/people.js` | Add to the right group in `groups`. Put their photo in `assets/` (square crop looks best). Names listed here are auto-bolded in the publication list. Use `note` for co-advising or home institution. |
 | Add a past mentee | `data/people.js` | Add a row to `pastMentees` (name, years, background, optional `highlight` publication, `next` destination). |

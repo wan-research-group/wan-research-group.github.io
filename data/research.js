@@ -2,7 +2,7 @@
 // Research areas shown on the home page and the Research page.
 // Mirrors the PI homepage taxonomy: two directions (Computing
 // for AI / AI for Computing) across three layers, plus the
-// Architecture 2.0 thrust.
+// Architecture 2.0 area.
 // `pubs` lists publication ids from data/publications.js used as
 // representative works on the Research page.
 // ============================================================
