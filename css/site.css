@@ -185,8 +185,10 @@ h1.page-title { font-size: 42px; line-height: 1.15; margin-bottom: 14px; }
 .research-block {
   padding: 40px 0;
   border-top: 1px solid var(--line);
+  scroll-margin-top: 80px;
 }
-.research-block:first-of-type { border-top: 0; }
+.research-figure-top { margin: 14px 0 34px; }
+.research-pillars { margin-bottom: 48px; }
 .research-block h2 {
   font-family: var(--serif); font-size: 27px; font-weight: 600;
   line-height: 1.25; margin-bottom: 6px;

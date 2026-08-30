@@ -419,6 +419,7 @@
       renderBooks(document.getElementById("books"));
     }
     if (page === "research") {
+      renderPillars(document.getElementById("research-pillars"));
       renderResearchPage(document.getElementById("research-blocks"));
     }
     if (page === "people") {
