@@ -267,8 +267,8 @@
   }
 
   function renderSelectedPubs(el) {
-    // Home page preview: the 8 most recent of the selected (representative) papers.
-    const sel = window.PUBLICATIONS.filter((p) => p.selected).slice(0, 8);
+    // Home page: papers marked `featured: true` in data/publications.js.
+    const sel = window.PUBLICATIONS.filter((p) => p.featured);
     el.innerHTML = `<div class="sel-pubs">${sel.map(pubItemHTML).join("")}</div>`;
   }
 
