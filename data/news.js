@@ -16,7 +16,7 @@ window.NEWS = [
   {
     date: "2026-07",
     tag: "Award",
-    text: "Zishen's PhD dissertation is selected for the **ACM SIGDA Outstanding Ph.D. Dissertation Award**.",
+    text: "Zishen's [PhD dissertation](https://repository.gatech.edu/entities/publication/b490c30e-213f-434e-b7a5-59347d1ccac2) is selected for the **ACM SIGDA Outstanding Ph.D. Dissertation Award**.",
   },
   {
     date: "2026-07",
@@ -61,7 +61,7 @@ window.NEWS = [
   {
     date: "2026-05",
     tag: "Award",
-    text: "Zishen's PhD dissertation is selected for the **Outstanding Ph.D. Dissertation Award at FCCM 2026**.",
+    text: "Zishen's [PhD dissertation](https://repository.gatech.edu/entities/publication/b490c30e-213f-434e-b7a5-59347d1ccac2) is selected for the **FCCM Outstanding Ph.D. Dissertation Award**.",
   },
   {
     date: "2026-05",
@@ -81,7 +81,7 @@ window.NEWS = [
   {
     date: "2026-03",
     tag: "Award",
-    text: "Zishen's PhD dissertation is selected for the **Georgia Tech Colonel Oscar P. Cleaver Award**.",
+    text: "Zishen's [PhD dissertation](https://repository.gatech.edu/entities/publication/b490c30e-213f-434e-b7a5-59347d1ccac2) is selected for the **Georgia Tech Colonel Oscar P. Cleaver Award**.",
   },
   {
     date: "2026-02",

@@ -301,6 +301,7 @@
       return `
       <div class="research-block" id="${r.id}">
         <h2>${esc(r.title)}</h2>
+        ${r.subtitle ? `<div class="research-sub">${esc(r.subtitle)}</div>` : ""}
         <p class="research-long">${esc(r.long)}</p>
         <div class="keywords">${r.keywords.map((k) => `<span class="keyword">${esc(k)}</span>`).join("")}</div>
         <div class="rep-pubs">${reps}</div>

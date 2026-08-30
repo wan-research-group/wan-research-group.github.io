@@ -189,7 +189,11 @@ h1.page-title { font-size: 42px; line-height: 1.15; margin-bottom: 14px; }
 .research-block:first-of-type { border-top: 0; }
 .research-block h2 {
   font-family: var(--serif); font-size: 27px; font-weight: 600;
-  line-height: 1.25; margin-bottom: 14px;
+  line-height: 1.25; margin-bottom: 6px;
+}
+.research-sub {
+  font-size: 13px; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 12px;
 }
 .research-block .research-long { color: var(--ink-soft); max-width: 50em; margin-bottom: 16px; }
 .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }

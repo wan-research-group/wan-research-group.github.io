@@ -10,9 +10,9 @@ window.SITE = {
   expansion: "Embodied-AI Architecture & Co-design",
   institution: "Columbia University",
   department: "Department of Computer Science",
-  tagline: "Computing systems for physical and agentic intelligence, co-designed from silicon to systems to agents.",
+  tagline: "Computing for AI, and AI for computing, co-designed across architecture, systems, and silicon.",
   description:
-    "We are a research group at Columbia University building the computing substrates that let intelligent machines sense, learn, reason, plan, and act efficiently and reliably in the physical world.",
+    "We are a research group at Columbia University building computing systems for emerging AI, and developing agentic AI that designs computing systems.",
   recruiting: true,
   recruitingNote:
     "We are recruiting PhD students, postdocs, and student researchers.",
