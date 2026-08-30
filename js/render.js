@@ -191,8 +191,8 @@
   const AREA_LABELS = {
     all: "All",
     selected: "Selected",
+    architecture: "Computer Architecture",
     systems: "Systems",
-    architecture: "Architecture",
     silicon: "Silicon & Circuits",
     arch2: "Agentic AI for Design",
   };
@@ -267,7 +267,8 @@
   }
 
   function renderSelectedPubs(el) {
-    const sel = window.PUBLICATIONS.filter((p) => p.selected);
+    // Home page preview: the 8 most recent of the selected (representative) papers.
+    const sel = window.PUBLICATIONS.filter((p) => p.selected).slice(0, 8);
     el.innerHTML = `<div class="sel-pubs">${sel.map(pubItemHTML).join("")}</div>`;
   }
 
