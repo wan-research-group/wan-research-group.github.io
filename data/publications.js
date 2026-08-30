@@ -243,7 +243,7 @@ window.PUBLICATIONS = [
     title: "NSFlow: An End-to-End FPGA Framework with Scalable Dataflow Architecture for Neuro-Symbolic AI",
     authors: "Hanchen Yang*, Zishen Wan*, Ritik Raj, Joongun Park, Ziwei Li, Ananda Samajdar, Arijit Raychowdhury, Tushar Krishna",
     venue: "DAC", venueFull: "ACM/IEEE Design Automation Conference",
-    year: 2025, type: "conference", tags: ["architecture"], selected: true,
+    year: 2025, type: "conference", tags: ["architecture"], selected: true, featured: true,
     links: {
       Paper: "https://arxiv.org/pdf/2504.19323",
       Slides: "https://zishenwan.github.io/publication/DAC25_NSFlow_Slide.pdf",
@@ -474,7 +474,7 @@ window.PUBLICATIONS = [
     title: "BERRY: Bit Error Robustness for Energy-Efficient Reinforcement Learning-Based Autonomous Systems",
     authors: "Zishen Wan, Nandhini Chandramoorthy, Karthik Swaminathan, Pin-Yu Chen, Vijay Janapa Reddi, Arijit Raychowdhury",
     venue: "DAC", venueFull: "ACM/IEEE Design Automation Conference",
-    year: 2023, type: "conference", tags: ["systems"],
+    year: 2023, type: "conference", tags: ["systems"], featured: true,
     links: {
       Paper: "https://zishenwan.github.io/publication/dac23_berry.pdf",
       Slides: "https://zishenwan.github.io/publication/DAC23_slide.pdf",
@@ -633,7 +633,7 @@ window.PUBLICATIONS = [
     title: "Algorithm-Hardware Co-Design of Adaptive Floating-Point Encodings for Resilient Deep Learning Inference",
     authors: "Thierry Tambe, En-Yu Yang, Zishen Wan, Yuntian Deng, Vijay Janapa Reddi, Alexander Rush, David Brooks, Gu-Yeon Wei",
     venue: "DAC", venueFull: "ACM/IEEE Design Automation Conference",
-    year: 2020, type: "conference", tags: ["architecture"],
+    year: 2020, type: "conference", tags: ["architecture"], featured: true,
     awards: ["Best Paper Award, DAC 2020"],
     links: { Paper: "https://zishenwan.github.io/publication/DAC2020.pdf" },
   },

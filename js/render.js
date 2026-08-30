@@ -164,7 +164,8 @@
 
   // ---------- publications ----------
 
-  function pubItemHTML(p) {
+  function pubItemHTML(p, opts) {
+    const bold = !opts || opts.bold !== false;
     const titleLink = p.links && (p.links.Paper || Object.values(p.links)[0]);
     const title = titleLink
       ? `<a href="${esc(titleLink)}">${esc(p.title)}</a>`
@@ -178,7 +179,7 @@
     return `
       <div class="pub-item">
         <div class="pub-title">${title}</div>
-        <div class="pub-authors">${boldAuthors(p.authors)}</div>
+        <div class="pub-authors">${bold ? boldAuthors(p.authors) : esc(p.authors)}</div>
         <div class="pub-meta">
           <span class="venue-badge" title="${esc(p.venueFull || "")}">${esc(p.venue)} ${p.year}</span>
           ${awards}
@@ -268,8 +269,9 @@
 
   function renderSelectedPubs(el) {
     // Home page: papers marked `featured: true` in data/publications.js.
+    // Author names are intentionally not bolded here.
     const sel = window.PUBLICATIONS.filter((p) => p.featured);
-    el.innerHTML = `<div class="sel-pubs">${sel.map(pubItemHTML).join("")}</div>`;
+    el.innerHTML = `<div class="sel-pubs">${sel.map((p) => pubItemHTML(p, { bold: false })).join("")}</div>`;
   }
 
   // ---------- research ----------
