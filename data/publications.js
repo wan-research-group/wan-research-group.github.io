@@ -58,7 +58,7 @@ window.PUBLICATIONS = [
     authors: "Shuting Du, Mohamed Ibrahim, Zishen Wan, Luqi Zheng, Boheng Zhao, Zhenkun Fan, Che-Kai Liu, Tushar Krishna, Arijit Raychowdhury, Haitong Li",
     venue: "TECS", venueFull: "ACM Transactions on Embedded Computing Systems",
     year: 2026, type: "journal", tags: ["architecture", "silicon"],
-    links: {},
+    links: { Paper: "https://dl.acm.org/doi/pdf/10.1145/3807784" },
   },
   {
     id: "arborist",
@@ -182,7 +182,7 @@ window.PUBLICATIONS = [
     authors: "Arya Tschand, Kesavan Ramakrishnan, Alexander Ingare, Simon Guo, Jeffrey Jian Ma, Zishen Wan, Simran Arora, Azalia Mirhoseini, Vijay Janapa Reddi",
     venue: "DL4C @ ICML", venueFull: "ICML Workshop on Deep Learning for Code",
     year: 2026, type: "preprint", tags: ["arch2"],
-    links: {},
+    links: { Paper: "https://openreview.net/forum?id=e3pxJbBRBk" },
   },
   {
     id: "flare",
@@ -624,7 +624,7 @@ window.PUBLICATIONS = [
     authors: "Zishen Wan, Yuyang Zhang, Arijit Raychowdhury, Bo Yu, Yanjun Zhang, Shaoshan Liu",
     venue: "AICAS", venueFull: "IEEE International Conference on Artificial Intelligence Circuits and Systems",
     year: 2021, type: "conference", tags: ["architecture"],
-    links: {},
+    links: { Paper: "https://arxiv.org/pdf/2104.00192" },
   },
 
   // ---------------- 2020 ----------------

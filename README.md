@@ -56,6 +56,4 @@ assets/ ……… photos, favicon, figures
 
 - [ ] `join.html`: add Electrical Engineering as a second PhD application route once the EE affiliation is approved
 
-- [ ] Add paper links for TECS'26, Hawkeye (DL4C'26), and the AICAS'21 quad-camera paper when available
-
 - [ ] `join.html`: verify the Columbia CS PhD application link/deadline wording before December
