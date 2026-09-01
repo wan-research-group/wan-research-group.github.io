@@ -51,9 +51,9 @@
     const page = document.body.dataset.page || "";
     const items = [
       ["index.html", "home", "Home"],
+      ["people.html", "people", "People"],
       ["research.html", "research", "Research"],
       ["publications.html", "publications", "Publications"],
-      ["people.html", "people", "People"],
       ["news.html", "news", "News"],
       ["join.html", "join", "Join Us"],
     ];
@@ -177,7 +177,7 @@
       .map(([k, v]) => `<a href="${esc(v)}">${esc(k)}</a>`)
       .join("");
     return `
-      <div class="pub-item">
+      <div class="pub-item${p.type === "preprint" ? " is-preprint" : ""}">
         <div class="pub-title">${title}</div>
         <div class="pub-authors">${bold ? boldAuthors(p.authors) : esc(p.authors)}</div>
         <div class="pub-meta">
@@ -186,21 +186,66 @@
           ${p.note ? `<span class="pub-note">${esc(p.note)}</span>` : ""}
           ${links ? `<span class="pub-links">${links}</span>` : ""}
         </div>
+        ${opts && opts.tags ? areaChipsHTML(p) : ""}
       </div>`;
   }
 
-  const AREA_LABELS = {
-    all: "All",
-    selected: "Selected",
-    architecture: "Computer Architecture",
-    systems: "Systems",
-    silicon: "Silicon & Circuits",
-    arch2: "Agentic AI for Design",
+  // Research areas: filter label, chip label, and accent color.
+  // Keys match `tags` in data/publications.js; research blocks map
+  // via RESEARCH_AREA_TAG (the Chips & VLSI block id is "chips").
+  const AREAS = {
+    architecture: { label: "Computer Architecture", chip: "Architecture", color: "#0b5cc4" },
+    systems: { label: "Systems", chip: "Systems", color: "#0b7570" },
+    silicon: { label: "Silicon & Circuits", chip: "Silicon", color: "#a0520f" },
+    arch2: { label: "Agentic AI for Design", chip: "Agentic AI for Design", color: "#6c4cb3" },
+  };
+  const RESEARCH_AREA_TAG = { architecture: "architecture", systems: "systems", chips: "silicon", arch2: "arch2" };
+
+  const areaChipsHTML = (p) => {
+    const tags = (p.tags || []).filter((t) => AREAS[t]);
+    if (!tags.length) return "";
+    const chips = tags
+      .map(
+        (t) =>
+          `<a class="area-chip" style="--chip:${AREAS[t].color}" data-area="${t}" ` +
+          `href="publications.html?area=${t}" title="All ${esc(AREAS[t].label)} publications">${esc(AREAS[t].chip)}</a>`
+      )
+      .join("");
+    return `<div class="pub-tags">${chips}</div>`;
   };
 
   function renderPublicationsPage(listEl, controlsEl) {
-    let area = "all";
-    let query = "";
+    const FILTERS = [
+      ["all", "All"],
+      ["selected", "Selected"],
+      ...Object.entries(AREAS).map(([k, a]) => [k, a.label]),
+    ];
+    const counts = {
+      all: window.PUBLICATIONS.length,
+      selected: window.PUBLICATIONS.filter((p) => p.selected).length,
+    };
+    Object.keys(AREAS).forEach((k) => {
+      counts[k] = window.PUBLICATIONS.filter((p) => (p.tags || []).includes(k)).length;
+    });
+
+    // Initial state comes from the URL (?area=...&q=...) so any
+    // filtered view is linkable and shareable.
+    const params = new URLSearchParams(location.search);
+    let area = FILTERS.some(([k]) => k === params.get("area")) ? params.get("area") : "all";
+    let query = (params.get("q") || "").trim();
+
+    let urlTimer;
+    function syncUrl() {
+      clearTimeout(urlTimer);
+      urlTimer = setTimeout(() => {
+        const url = new URL(location.href);
+        if (area === "all") url.searchParams.delete("area");
+        else url.searchParams.set("area", area);
+        if (query) url.searchParams.set("q", query);
+        else url.searchParams.delete("q");
+        history.replaceState(null, "", url);
+      }, 150);
+    }
 
     function matches(p) {
       if (area === "selected" && !p.selected) return false;
@@ -221,7 +266,8 @@
         ? years
             .map(
               (y) =>
-                `<div class="pub-year">${y}</div>` + byYear[y].map(pubItemHTML).join("")
+                `<div class="pub-year">${y}<span class="pub-year-count">${byYear[y].length} paper${byYear[y].length === 1 ? "" : "s"}</span></div>` +
+                byYear[y].map((p) => pubItemHTML(p, { tags: true })).join("")
             )
             .join("")
         : `<p class="pub-empty">No publications match. Try a different search or filter.</p>`;
@@ -229,27 +275,40 @@
         `${pubs.length} publication${pubs.length === 1 ? "" : "s"}`;
     }
 
+    function setArea(next) {
+      area = next;
+      controlsEl.querySelectorAll(".pub-filter").forEach((b) =>
+        b.classList.toggle("active", b.dataset.area === area)
+      );
+      draw();
+      syncUrl();
+    }
+
     controlsEl.innerHTML =
-      Object.entries(AREA_LABELS)
-        .map(
-          ([k, label]) =>
-            `<button class="pub-filter ${k === "all" ? "active" : ""}" data-area="${k}">${label}</button>`
-        )
-        .join("") +
-      `<input class="pub-search" type="search" placeholder="Search title, author, venue…" aria-label="Search publications">` +
-      `<span class="pub-count"></span>`;
+      FILTERS.map(
+        ([k, label]) =>
+          `<button class="pub-filter ${k === area ? "active" : ""}" data-area="${k}">${label}<span class="pub-filter-count">${counts[k]}</span></button>`
+      ).join("") +
+      `<input class="pub-search" type="search" placeholder="Search title, author, venue…" aria-label="Search publications" value="${esc(query)}">` +
+      `<span class="pub-count" aria-live="polite"></span>`;
 
     controlsEl.querySelectorAll(".pub-filter").forEach((btn) =>
-      btn.addEventListener("click", () => {
-        area = btn.dataset.area;
-        controlsEl.querySelectorAll(".pub-filter").forEach((b) => b.classList.toggle("active", b === btn));
-        draw();
-      })
+      btn.addEventListener("click", () => setArea(btn.dataset.area))
     );
     controlsEl.querySelector(".pub-search").addEventListener("input", (e) => {
       query = e.target.value.trim();
       draw();
+      syncUrl();
     });
+
+    // Area chips inside the list filter in place instead of reloading.
+    listEl.addEventListener("click", (e) => {
+      const chip = e.target.closest(".area-chip");
+      if (!chip) return;
+      e.preventDefault();
+      setArea(chip.dataset.area);
+    });
+
     draw();
   }
 
@@ -267,24 +326,34 @@
     ).join("");
   }
 
-  function renderSelectedPubs(el) {
-    // Home page: papers marked `featured: true` in data/publications.js.
-    // Author names are intentionally not bolded here.
-    const sel = window.PUBLICATIONS.filter((p) => p.featured);
-    el.innerHTML = `<div class="sel-pubs">${sel.map((p) => pubItemHTML(p, { bold: false })).join("")}</div>`;
+  function renderCollaborators(el) {
+    // Home page marquee. Entries in SITE.collaborators are either a
+    // plain string (text wordmark) or { name, logo } (logo image).
+    // Items are duplicated once so the -50% keyframe loops seamlessly.
+    const orgs = (S.collaborators || []).map((c) => (typeof c === "string" ? { name: c } : c));
+    if (!orgs.length) return;
+    const item = (o, hidden) =>
+      `<span class="collab-item"${hidden ? ' aria-hidden="true"' : ""}>${
+        o.logo ? `<img src="${esc(o.logo)}" alt="${hidden ? "" : esc(o.name)}">` : esc(o.name)
+      }</span>`;
+    el.innerHTML = `<div class="collab-track">${orgs.map((o) => item(o, false)).join("")}${orgs
+      .map((o) => item(o, true))
+      .join("")}</div>`;
   }
 
   // ---------- research ----------
 
   function renderPillars(el) {
-    el.innerHTML = window.RESEARCH.map(
-      (r, i) => `
-      <a class="pillar" href="research.html#${r.id}">
+    el.innerHTML = window.RESEARCH.map((r, i) => {
+      const tag = RESEARCH_AREA_TAG[r.id];
+      const style = tag ? ` style="--area-color:${AREAS[tag].color}"` : "";
+      return `
+      <a class="pillar"${style} href="research.html#${r.id}">
         <div class="pillar-num">0${i + 1}</div>
         <h3>${esc(r.title)}</h3>
         <p>${esc(r.short)}</p>
-      </a>`
-    ).join("");
+      </a>`;
+    }).join("");
   }
 
   function renderResearchPage(el) {
@@ -300,13 +369,19 @@
           return `<div class="rep-pub">${t}<span class="rep-venue">${esc(p.venue)} ${p.year}</span></div>`;
         })
         .join("");
+      const tag = RESEARCH_AREA_TAG[r.id];
+      const style = tag ? ` style="--area-color:${AREAS[tag].color}"` : "";
+      const moreLink = tag
+        ? `<a class="research-more" href="publications.html?area=${tag}">All ${esc(AREAS[tag].label)} publications →</a>`
+        : "";
       return `
-      <div class="research-block" id="${r.id}">
+      <div class="research-block" id="${r.id}"${style}>
         <h2>${esc(r.title)}</h2>
         ${r.subtitle ? `<div class="research-sub">${esc(r.subtitle)}</div>` : ""}
         <p class="research-long">${esc(r.long)}</p>
         <div class="keywords">${r.keywords.map((k) => `<span class="keyword">${esc(k)}</span>`).join("")}</div>
         <div class="rep-pubs">${reps}</div>
+        ${moreLink}
       </div>`;
     }).join("");
   }
@@ -405,7 +480,7 @@
     if (page === "home") {
       renderPillars(document.getElementById("pillars"));
       renderNews(document.getElementById("home-news"), 6);
-      renderSelectedPubs(document.getElementById("home-pubs"));
+      renderCollaborators(document.getElementById("collaborators"));
     }
     if (page === "news") {
       renderNewsPage(

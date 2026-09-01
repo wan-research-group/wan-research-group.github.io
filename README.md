@@ -8,7 +8,8 @@ The website of the Wan Lab at Columbia University.
 
 | Task | File | What to do |
 |---|---|---|
-| Add a paper | `data/publications.js` | Copy an entry to the top of the array. Set `venue`, `year`, `tags` (research area), `links`. Add `selected: true` for the Selected filter (representative work), and `featured: true` to show it on the home page. |
+| Add a paper | `data/publications.js` | Copy an entry to the top of the array. Set `venue`, `year`, `tags` (research area), `links`. Add `selected: true` for the Selected filter (representative work). `type: "preprint"` renders with a neutral (instead of blue) spine and venue badge. |
+| Edit collaborators band | `data/site.js` | Edit the `collaborators` array (home-page marquee). Each entry is `{ name, logo }` with the logo file in `assets/sponsors/` (current PNGs are Wikimedia Commons thumbnails, ~500px wide); a plain string entry renders as a text name instead. |
 | Add news | `data/news.js` | Add an entry at the top. `[text](url)` inside `text` becomes a link. |
 | Add a member | `data/people.js` | Add to the right group in `groups`. Put their photo in `assets/` (square crop looks best). Names listed here are auto-bolded in the publication list. Use `note` for co-advising or home institution. |
 | Add a past mentee | `data/people.js` | Add a row to `pastMentees` (name, years, background, optional `highlight` publication, `next` destination). |
@@ -35,14 +36,21 @@ One-time setup:
 
 After that, publishing an update is just: commit → push.
 
+**Cache busting:** every page loads `css/site.css`, `js/render.js`, and `data/*.js` with a `?v=YYYYMMDD` token. After changing any CSS/JS/data file, bump the token in all six HTML files so visitors do not get stale cached versions:
+
+```bash
+LANG=C sed -i '' 's/?v=[0-9]\{8\}/?v=NEW_DATE_HERE/g' *.html
+```
+
 If you later buy a custom domain, add it in Settings → Pages and create a `CNAME` file; also update the URL in `sitemap.xml`.
 
 ## Structure
 
 ```
-index.html …… home (hero, pillars, recent news, selected pubs)
+index.html …… home (hero, pillars, recent news, collaborators band)
 research.html … four research thrusts + representative papers
 publications.html … full list, filterable by area, grouped by year
+                    (filters sync to the URL: ?area=systems&q=serving is shareable)
 people.html … PI + members (renders from data/people.js)
 news.html …… full news archive
 join.html …… openings, how to apply, FAQ

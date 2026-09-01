@@ -9,6 +9,11 @@
 window.NEWS = [
   // ---------------- 2026 ----------------
   {
+    date: "2026-09",
+    tag: "Teaching",
+    text: "Zishen is teaching [COMS 6998: AI-Native Computing](https://wan-research-group.github.io/coms6998-f26/) (Hardware for AI, AI for Hardware) at Columbia in Fall 2026.",
+  },
+  {
     date: "2026-08",
     tag: "Lab",
     text: "Zishen joins the [Department of Computer Science at Columbia University](https://www.cs.columbia.edu/) as an Assistant Professor, and the Wan Lab officially launches! We are recruiting PhD students (Fall 2027), postdocs, and visiting students. See [Join Us](join.html).",
