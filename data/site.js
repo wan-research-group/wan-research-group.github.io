@@ -16,7 +16,7 @@ window.SITE = {
   recruiting: true,
   recruitingNote:
     "We are recruiting PhD students, postdocs, and visiting students.",
-  email: "zw3306@columbia.edu",
+  email: "zishen.wan@columbia.edu",
   address: "500 West 120th Street, New York, NY 10027",
   links: {
     scholar: "https://scholar.google.com/citations?user=dt3ImqIAAAAJ&hl=en",

@@ -15,7 +15,7 @@ window.PEOPLE = {
       "Before joining Columbia University, he was a Postdoctoral Fellow at Harvard University, working with Prof. Vijay Janapa Reddi. He received his Ph.D. from Georgia Tech in 2025, advised by Prof. Arijit Raychowdhury and Prof. Tushar Krishna. His dissertation, “Tailored Computing: Cross-Layer System, Architecture, and Silicon Co-Design for Physical Intelligence,” received the ACM SIGDA Outstanding Ph.D. Dissertation Award, the FCCM Outstanding Ph.D. Dissertation Award, and Georgia Tech's Colonel Oscar P. Cleaver Award.",
       "His research has been recognized with Best Paper Awards from DAC, IEEE Computer Architecture Letters, and DARPA SRC JUMP 2.0, as well as IEEE Micro Top Picks and ACM SIGDA Research Highlights. He was awarded first-place honors at DAC Ph.D. Forum and ACM Student Research Competition, along with WAIC Yunfan Award and Baidu and Qualcomm Fellowships. He was selected as ML and Systems Rising Star and Cyber-Physical Systems Rising Star, and his work involves close collaboration with IBM, TSMC, Intel, Google, NVIDIA, Qualcomm, and Samsung.",
     ],
-    email: "zw3306@columbia.edu",
+    email: "zishen.wan@columbia.edu",
     office: "522 CSB, 500 West 120th Street, New York, NY 10027",
     links: {
       Website: "https://zishenwan.github.io/",
