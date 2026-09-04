@@ -66,8 +66,15 @@ window.PEOPLE = {
           },
         },
         {
+          name: "Jeff Zhang",
+          role: "M.S. Student, Purdue",
+          edu: "B.S., Purdue",
+          photo: "assets/jeff_zhang.jpg",
+          links: {},
+        },
+        {
           name: "Yichong Zhang",
-          role: "B.S. Student, Tsinghua University",
+          role: "B.S. Student, Tsinghua",
           photo: "assets/yichong_zhang.JPG",
           links: {},
         },

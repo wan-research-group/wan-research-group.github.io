@@ -10,6 +10,11 @@ window.NEWS = [
   // ---------------- 2026 ----------------
   {
     date: "2026-09",
+    tag: "Paper",
+    text: "CoCoSys, our overview of co-designing cognitive AI from algorithms to systems, is accepted to **IEEE Micro**.",
+  },
+  {
+    date: "2026-09",
     tag: "Teaching",
     text: "Zishen is teaching [COMS 6998: AI-Native Computing](https://wan-research-group.github.io/coms6998-f26/) (Hardware for AI, AI for Hardware) at Columbia in Fall 2026.",
   },

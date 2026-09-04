@@ -12,6 +12,30 @@
 window.PUBLICATIONS = [
   // ---------------- 2026 ----------------
   {
+    id: "affective-agent",
+    title: "Affective Agent: On-Device Personalized Intervention Reasoning for Wearable Systems",
+    authors: "Reina Mun, Zishen Wan, Vijay Janapa Reddi",
+    venue: "IEEE Internet Computing", venueFull: "IEEE Internet Computing",
+    year: 2026, type: "journal", tags: ["systems"], note: "To appear",
+    links: {},
+  },
+  {
+    id: "cocosys",
+    title: "CoCoSys: The Co-Design of Cognitive AI from Algorithms to Systems",
+    authors: "Zishen Wan, Yu (Kevin) Cao, Sumeet K. Gupta, Larry Heck, Tushar Krishna, Yingyan (Celine) Lin, Azad Naeemi, Bruno Olshausen, Priyadarshini Panda, Jan Rabaey, Vijay Raghunathan, Priyanka Raina, Tajana S. Rosing, Kaushik Roy, Jae-Sun Seo, Naresh Shanbhag, Josh Tenenbaum, Anand Raghunathan, Arijit Raychowdhury",
+    venue: "IEEE Micro", venueFull: "IEEE Micro",
+    year: 2026, type: "journal", tags: ["architecture", "systems"], note: "To appear",
+    links: {},
+  },
+  {
+    id: "ieee-micro-arch2",
+    title: "Architecture 2.0: When Artificial Intelligence Starts Designing the Chips: A Fireside Chat With Vijay Janapa Reddi",
+    authors: "Zishen Wan, Mariam Elgamal",
+    venue: "IEEE Micro", venueFull: "IEEE Micro, vol. 46, no. 4, pp. 134-143",
+    year: 2026, type: "journal", tags: ["arch2"],
+    links: { Paper: "https://ieeexplore.ieee.org/abstract/document/11668586" },
+  },
+  {
     id: "reason",
     title: "REASON: Accelerating Probabilistic Logical Reasoning for Scalable Neuro-Symbolic Intelligence",
     authors: "Zishen Wan, Che-Kai Liu, Jiayi Qian, Hanchen Yang, Arijit Raychowdhury, Tushar Krishna",
