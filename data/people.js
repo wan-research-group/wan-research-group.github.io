@@ -52,8 +52,51 @@ window.PEOPLE = {
       ],
     },
     {
-      title: "MS & BS Students",
+      title: "MS Students",
       members: [
+        {
+          name: "Yunyang Lu",
+          role: "M.S. Student, Columbia",
+          edu: "B.S., HKUST",
+          photo: "assets/yunyang_lu.jpg",
+          links: {
+            LinkedIn: "https://www.linkedin.com/in/yunyang-lu-0555572ba/",
+          },
+        },
+        {
+          name: "Scott Loftin",
+          role: "M.S. Student, Columbia",
+          edu: "B.S., UNC-Chapel Hill",
+          photo: "assets/scott_loftin.jpg",
+          links: {
+            LinkedIn: "https://www.linkedin.com/in/scottloftin/",
+          },
+        },
+        {
+          name: "Genhao (Arthur) Zhang",
+          role: "M.S. Student, Columbia",
+          edu: "B.S., Fudan University",
+          photo: "assets/genhao_zhang.jpg",
+          links: {
+            LinkedIn: "https://www.linkedin.com/in/genhao-zhang-414021380/",
+          },
+        },
+        {
+          name: "Yanxiang Zhu",
+          role: "M.S. Student, Columbia",
+          edu: "B.S., Fudan University",
+          photo: "assets/yanxiang_zhu.jpg",
+          links: {
+            LinkedIn: "https://www.linkedin.com/in/yanxiang-zhu/",
+          },
+        },
+        {
+          name: "Zihao Fang",
+          role: "M.S. Student, Columbia",
+          edu: "B.S., CUHK",
+          photo: "assets/zihao_fang.png",
+          links: {},
+        },
         {
           name: "Rishi Khare",
           role: "M.S. Student, Georgia Tech",
@@ -71,6 +114,19 @@ window.PEOPLE = {
           edu: "B.S., Purdue",
           photo: "assets/jeff_zhang.jpg",
           links: {},
+        },
+      ],
+    },
+    {
+      title: "Undergraduate Students",
+      members: [
+        {
+          name: "Rohit Mahesh",
+          role: "B.S. Student, Columbia",
+          photo: "assets/rohit_mahesh.jpg",
+          links: {
+            LinkedIn: "https://www.linkedin.com/in/rohit-mahesh-/",
+          },
         },
         {
           name: "Yichong Zhang",
