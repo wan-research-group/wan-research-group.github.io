@@ -15,6 +15,7 @@ The website of the Wan Lab at Columbia University.
 | Add a past mentee | `data/people.js` | Add a row to `pastMentees` (name, years, background, optional `highlight` publication, `next` destination). |
 | Edit research areas | `data/research.js` | Each pillar has a short blurb (home page), long blurb (research page), keywords, and representative publication ids. |
 | Rename the lab / change contact | `data/site.js` | One place; nav, footer, and banners update everywhere. Page `<title>` tags in each HTML file must be updated by hand. |
+| Add or update a course | `data/courses.js` | Newest term first. `current: true` renders the big featured card (meta rows, the two module blocks, topic chips, link); other entries fall into the compact "Previous teaching" list. |
 | Edit Join Us content | `join.html` | Plain HTML, edit directly. |
 
 ## Preview locally
@@ -36,7 +37,7 @@ One-time setup:
 
 After that, publishing an update is just: commit → push.
 
-**Cache busting:** every page loads `css/site.css`, `js/render.js`, and `data/*.js` with a `?v=YYYYMMDD` token. After changing any CSS/JS/data file, bump the token in all six HTML files so visitors do not get stale cached versions:
+**Cache busting:** every page loads `css/site.css`, `js/render.js`, and `data/*.js` with a `?v=YYYYMMDD` token. After changing any CSS/JS/data file, bump the token in all seven HTML files so visitors do not get stale cached versions:
 
 ```bash
 LANG=C sed -i '' 's/?v=[0-9]\{8\}/?v=NEW_DATE_HERE/g' *.html
@@ -52,6 +53,7 @@ research.html … four research thrusts + representative papers
 publications.html … full list, filterable by area, grouped by year
                     (filters sync to the URL: ?area=systems&q=serving is shareable)
 people.html … PI + members (renders from data/people.js)
+courses.html … courses taught (renders from data/courses.js)
 news.html …… full news archive
 join.html …… openings, how to apply, FAQ
 css/site.css …… the whole design system

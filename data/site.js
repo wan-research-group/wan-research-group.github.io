@@ -31,6 +31,7 @@ window.SITE = {
   // Order: industry (most recognizable first), national labs, US
   // universities (most recognizable first), international.
   collaborators: [
+    { name: "National Science Foundation", logo: "assets/sponsors/nsf.png" },
     { name: "NVIDIA", logo: "assets/sponsors/nvidia.png" },
     { name: "Google", logo: "assets/sponsors/google.png" },
     { name: "Intel", logo: "assets/sponsors/intel.png" },

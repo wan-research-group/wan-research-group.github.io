@@ -11,7 +11,7 @@ window.NEWS = [
   {
     date: "2026-09",
     tag: "Paper",
-    text: "CoCoSys, our overview of co-designing cognitive AI from algorithms to systems, is accepted to **IEEE Micro**.",
+    text: "CoCoSys, our work of co-designing cognitive AI from algorithms to systems, is accepted to **IEEE Micro**.",
   },
   {
     date: "2026-09",

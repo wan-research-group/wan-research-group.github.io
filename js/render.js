@@ -54,6 +54,7 @@
       ["people.html", "people", "People"],
       ["research.html", "research", "Research"],
       ["publications.html", "publications", "Publications"],
+      ["courses.html", "courses", "Courses"],
       ["news.html", "news", "News"],
       ["join.html", "join", "Join Us"],
     ];
@@ -386,6 +387,91 @@
     }).join("");
   }
 
+  // ---------- courses ----------
+
+  function renderCoursesPage(currentEl, pastEl) {
+    const courses = window.COURSES || [];
+
+    currentEl.innerHTML = courses
+      .filter((c) => c.current)
+      .map((c) => {
+        const meta = (c.meta || [])
+          .map(([k, v]) => `<div class="course-meta-item"><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`)
+          .join("");
+        const modules = (c.modules || [])
+          .map((m) => {
+            const color = AREAS[m.area] ? AREAS[m.area].color : "";
+            return `
+            <div class="course-module"${color ? ` style="--area-color:${color}"` : ""}>
+              <div class="course-module-num">${esc(m.num)}</div>
+              <h3>${esc(m.title)}</h3>
+              <p>${esc(m.desc)}</p>
+            </div>`;
+          })
+          .join("");
+        const topics = (c.topics || [])
+          .map((t) => `<span class="keyword">${esc(t)}</span>`)
+          .join("");
+        return `
+        <article class="course-card">
+          <div class="course-term">
+            <span class="course-term-badge">${esc(c.term)}</span>
+            <span>${esc(c.institution)}</span>
+            ${c.role ? `<span>${esc(c.role)}</span>` : ""}
+          </div>
+          <h2 class="course-title">
+            <span class="course-code">${esc(c.code)}</span>
+            ${esc(c.title)}
+          </h2>
+          ${c.subtitle ? `<div class="course-sub">${esc(c.subtitle)}</div>` : ""}
+          ${c.blurb ? `<p class="course-blurb">${esc(c.blurb)}</p>` : ""}
+          ${meta ? `<dl class="course-meta">${meta}</dl>` : ""}
+          ${modules ? `<div class="course-modules">${modules}</div>` : ""}
+          ${topics ? `<div class="keywords course-topics">${topics}</div>` : ""}
+          ${
+            c.url
+              ? `<a class="btn btn-primary" href="${esc(c.url)}" target="_blank" rel="noopener">Course website →</a>`
+              : ""
+          }
+        </article>`;
+      })
+      .join("");
+
+    const past = courses.filter((c) => !c.current);
+    pastEl.innerHTML = past.length
+      ? `
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Archive</div>
+            <h2>Previous teaching</h2>
+          </div>
+        </div>
+        <div class="past-courses">
+          ${past
+            .map((c) => {
+              const name = `${esc(c.code)}: ${esc(c.title)}`;
+              return `
+              <div class="past-course">
+                <span class="past-course-term">${esc(c.term)}</span>
+                <span>
+                  <span class="past-course-title">${
+                    c.url
+                      ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${name}</a>`
+                      : name
+                  }</span>
+                  <span class="past-course-meta">${esc(c.institution)}${
+                    c.role ? " · " + esc(c.role) : ""
+                  }</span>
+                </span>
+              </div>`;
+            })
+            .join("")}
+        </div>
+      </section>`
+      : "";
+  }
+
   // ---------- people ----------
 
   function renderPeoplePage(piEl, groupsEl) {
@@ -498,6 +584,12 @@
     if (page === "research") {
       renderPillars(document.getElementById("research-pillars"));
       renderResearchPage(document.getElementById("research-blocks"));
+    }
+    if (page === "courses") {
+      renderCoursesPage(
+        document.getElementById("courses-current"),
+        document.getElementById("courses-past")
+      );
     }
     if (page === "people") {
       renderPeoplePage(
