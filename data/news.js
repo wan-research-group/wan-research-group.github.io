@@ -10,8 +10,18 @@ window.NEWS = [
   // ---------------- 2026 ----------------
   {
     date: "2026-09",
+    tag: "Workshop",
+    text: "We will host the [Architecture 2.0: Agentic AI for Computing System Design](https://harvard-edge.github.io/iiswc-26-arch-2-tutorial/) tutorial at **IISWC 2026**.",
+  },
+  {
+    date: "2026-09",
     tag: "Paper",
-    text: "CoCoSys, our work of co-designing cognitive AI from algorithms to systems, is accepted to **IEEE Micro**.",
+    text: "[CoCoSys](https://zishenwan.github.io/publication/IEEE_Micro_2026_CoCoSys.pdf), our work of co-designing cognitive AI from algorithms to systems, is accepted to **IEEE Micro**.",
+  },
+  {
+    date: "2026-09",
+    tag: "Paper",
+    text: "[Affective Agent](https://ieeexplore.ieee.org/abstract/document/11691028), our on-device personalized intervention reasoning framework for wearable systems, is accepted to **IEEE Internet Computing**.",
   },
   {
     date: "2026-09",

@@ -12,20 +12,12 @@
 window.PUBLICATIONS = [
   // ---------------- 2026 ----------------
   {
-    id: "affective-agent",
-    title: "Affective Agent: On-Device Personalized Intervention Reasoning for Wearable Systems",
-    authors: "Reina Mun, Zishen Wan, Vijay Janapa Reddi",
-    venue: "IEEE Internet Computing", venueFull: "IEEE Internet Computing",
-    year: 2026, type: "journal", tags: ["systems"], note: "To appear",
-    links: {},
-  },
-  {
     id: "cocosys",
     title: "CoCoSys: The Co-Design of Cognitive AI from Algorithms to Systems",
     authors: "Zishen Wan, Yu (Kevin) Cao, Sumeet K. Gupta, Larry Heck, Tushar Krishna, Yingyan (Celine) Lin, Azad Naeemi, Bruno Olshausen, Priyadarshini Panda, Jan Rabaey, Vijay Raghunathan, Priyanka Raina, Tajana S. Rosing, Kaushik Roy, Jae-Sun Seo, Naresh Shanbhag, Josh Tenenbaum, Anand Raghunathan, Arijit Raychowdhury",
     venue: "IEEE Micro", venueFull: "IEEE Micro",
-    year: 2026, type: "journal", tags: ["architecture", "systems"], note: "To appear",
-    links: {},
+    year: 2026, type: "journal", tags: ["architecture", "systems"],
+    links: { Paper: "https://zishenwan.github.io/publication/IEEE_Micro_2026_CoCoSys.pdf" },
   },
   {
     id: "ieee-micro-arch2",
@@ -34,6 +26,14 @@ window.PUBLICATIONS = [
     venue: "IEEE Micro", venueFull: "IEEE Micro, vol. 46, no. 4, pp. 134-143",
     year: 2026, type: "journal", tags: ["arch2"],
     links: { Paper: "https://ieeexplore.ieee.org/abstract/document/11668586" },
+  },
+  {
+    id: "affective-agent",
+    title: "Affective Agent: On-Device Personalized Intervention Reasoning for Wearable Systems",
+    authors: "Reina Mun, Zishen Wan, Vijay Janapa Reddi",
+    venue: "IEEE Internet Computing", venueFull: "IEEE Internet Computing",
+    year: 2026, type: "journal", tags: ["systems"],
+    links: { Paper: "https://ieeexplore.ieee.org/abstract/document/11691028" },
   },
   {
     id: "reason",
@@ -89,8 +89,8 @@ window.PUBLICATIONS = [
     title: "Arborist: Algorithm-Hardware Co-Design for Fast and Efficient Motion Planning",
     authors: "Yaotian Liu, Lingyi Huang, Zishen Wan, Bo Yuan, Cheng Tan, Jeff Zhang",
     venue: "MICRO", venueFull: "IEEE/ACM International Symposium on Microarchitecture",
-    year: 2026, type: "conference", tags: ["architecture"], selected: true, featured: true, note: "To appear",
-    links: {},
+    year: 2026, type: "conference", tags: ["architecture"], selected: true, featured: true,
+    links: { Paper: "https://arxiv.org/pdf/2609.13420" },
   },
   {
     id: "slm-mux",
@@ -206,7 +206,15 @@ window.PUBLICATIONS = [
     authors: "Arya Tschand, Kesavan Ramakrishnan, Alexander Ingare, Simon Guo, Jeffrey Jian Ma, Zishen Wan, Simran Arora, Azalia Mirhoseini, Vijay Janapa Reddi",
     venue: "DL4C @ ICML", venueFull: "ICML Workshop on Deep Learning for Code",
     year: 2026, type: "preprint", tags: ["arch2"],
-    links: { Paper: "https://openreview.net/forum?id=e3pxJbBRBk" },
+    links: { Paper: "https://www.alphaxiv.org/pdf/2608.hawkeye-hardware-aware-gpu-kernel-optimization" },
+  },
+  {
+    id: "agent-memory",
+    title: "Measure Before You Manage: Evaluating Agent Working Memory in Coding Agents",
+    authors: "Le Chen, Zishen Wan, Baixi Sun, Xiaolong Ma, Chih-Hsuan Yang, Feng Yan, Sheng Di, Franck Cappello, Rajeev Thakur",
+    venue: "arXiv", venueFull: "arXiv preprint",
+    year: 2026, type: "preprint", tags: ["arch2"],
+    links: { Paper: "https://arxiv.org/pdf/2608.31057" },
   },
   {
     id: "flare",
@@ -311,7 +319,7 @@ window.PUBLICATIONS = [
     authors: "Kaushik Roy, Adarsh Kosta, Tanvi Sharma, Shubham Negi, Deepika Sharma, Utkarsh Saxena, Sourjya Roy, Anand Raghunathan, Zishen Wan, Samuel Spetalnick, Che-Kai Liu, Arijit Raychowdhury",
     venue: "Frontiers in Science", venueFull: "Frontiers in Science",
     year: 2025, type: "journal", tags: ["silicon"],
-    links: {},
+    links: { Paper: "https://www.frontiersin.org/journals/science/articles/10.3389/fsci.2025.1611658/full" },
   },
   {
     id: "iscas25",
@@ -433,7 +441,7 @@ window.PUBLICATIONS = [
     links: {
       Paper: "https://arxiv.org/pdf/2309.09212",
       Code: "https://github.com/robotperf/benchmarks",
-      Website: "https://robotperf.net",
+      Website: "https://www.robotperf.net",
     },
   },
   {
@@ -679,7 +687,7 @@ window.BOOKS = [
     authors: "Shaoshan Liu, Zishen Wan, Bo Yu, Yu Wang",
     venue: "Synthesis Lectures on Computer Architecture, Morgan & Claypool Publishers",
     year: 2021,
-    links: { Book: "https://www.morganclaypool.com/doi/10.2200/S01101ED1V01Y202105CAC056" },
+    links: { Book: "https://link.springer.com/10.1007/978-3-031-01771-1" },
     blurb: "A thorough overview of FPGA-based robotic computing accelerator designs (perception, localization, planning, and multi-robot collaboration), including commercial autonomous vehicles and space robots.",
   },
   {
