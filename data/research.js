@@ -49,6 +49,6 @@ window.RESEARCH = [
     long:
       "If AI is reshaping every field, computing system design should be no exception. We study how LLM-based agents can act as computer architects: benchmarks that measure their architectural reasoning, simulator-in-the-loop agents that explore design spaces with auditable traces, and multi-agent flows that draft ISA extensions and hardware. The long-term vision is a co-evolution loop where hardware, systems, and AI agents co-design, co-reason, and co-evolve.",
     keywords: ["LLM agents", "Design space exploration", "Benchmarks", "Hardware generation", "Verification"],
-    pubs: ["archeval", "agentdse", "quarch", "lace", "hdlxgraph", "genai-systems"],
+    pubs: ["archeval", "agentdse", "quarch", "hawkeye", "lace", "hdlxgraph", "genai-systems"],
   },
 ];

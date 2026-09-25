@@ -16,7 +16,7 @@ window.PUBLICATIONS = [
     title: "CoCoSys: The Co-Design of Cognitive AI from Algorithms to Systems",
     authors: "Zishen Wan, Yu (Kevin) Cao, Sumeet K. Gupta, Larry Heck, Tushar Krishna, Yingyan (Celine) Lin, Azad Naeemi, Bruno Olshausen, Priyadarshini Panda, Jan Rabaey, Vijay Raghunathan, Priyanka Raina, Tajana S. Rosing, Kaushik Roy, Jae-Sun Seo, Naresh Shanbhag, Josh Tenenbaum, Anand Raghunathan, Arijit Raychowdhury",
     venue: "IEEE Micro", venueFull: "IEEE Micro",
-    year: 2026, type: "journal", tags: ["architecture", "systems"],
+    year: 2026, type: "journal", tags: ["architecture", "systems"], selected: true,
     links: { Paper: "https://zishenwan.github.io/publication/IEEE_Micro_2026_CoCoSys.pdf" },
   },
   {
@@ -26,6 +26,14 @@ window.PUBLICATIONS = [
     venue: "IEEE Micro", venueFull: "IEEE Micro, vol. 46, no. 4, pp. 134-143",
     year: 2026, type: "journal", tags: ["arch2"],
     links: { Paper: "https://ieeexplore.ieee.org/abstract/document/11668586" },
+  },
+  {
+    id: "hawkeye",
+    title: "Hawkeye: Hardware-Aware GPU Kernel Optimization with Minimal Supervision",
+    authors: "Arya Tschand, Kesavan Ramakrishnan, Alexander Ingare, Simon Guo, Jeffrey Jian Ma, Zishen Wan, Simran Arora, Azalia Mirhoseini, Vijay Janapa Reddi",
+    venue: "NeurIPS", venueFull: "Conference on Neural Information Processing Systems",
+    year: 2026, type: "conference", tags: ["arch2"], selected: true,
+    links: { Paper: "https://www.alphaxiv.org/pdf/2608.hawkeye-hardware-aware-gpu-kernel-optimization" },
   },
   {
     id: "affective-agent",
@@ -199,14 +207,6 @@ window.PUBLICATIONS = [
     venue: "arXiv", venueFull: "arXiv preprint",
     year: 2026, type: "preprint", tags: ["arch2"], selected: true,
     links: { Paper: "https://arxiv.org/pdf/2602.15241", Website: "https://harvard-edge.github.io/cs249r_fall2025/" },
-  },
-  {
-    id: "hawkeye",
-    title: "Hawkeye: Hardware-Aware GPU Kernel Optimization with Minimal Supervision",
-    authors: "Arya Tschand, Kesavan Ramakrishnan, Alexander Ingare, Simon Guo, Jeffrey Jian Ma, Zishen Wan, Simran Arora, Azalia Mirhoseini, Vijay Janapa Reddi",
-    venue: "DL4C @ ICML", venueFull: "ICML Workshop on Deep Learning for Code",
-    year: 2026, type: "preprint", tags: ["arch2"],
-    links: { Paper: "https://www.alphaxiv.org/pdf/2608.hawkeye-hardware-aware-gpu-kernel-optimization" },
   },
   {
     id: "agent-memory",
