@@ -43,6 +43,7 @@ window.PEOPLE = {
           edu: "B.S., Tsinghua University",
           photo: "assets/jiayi_qian.png",
           interests: "AI for computer architecture; ML systems for agentic AI; Accelerators for physical and neuro-symbolic AI",
+          email: "jiayiqian@gatech.edu",
           links: {
             Website: "https://jiayi-19.github.io/",
             Scholar: "https://scholar.google.com/citations?user=-yGPXHkAAAAJ&hl=en",
@@ -59,6 +60,7 @@ window.PEOPLE = {
           role: "M.S. Student, Columbia",
           edu: "B.S., HKUST",
           photo: "assets/yunyang_lu.jpg",
+          email: "yl6339@columbia.edu",
           links: {
             LinkedIn: "https://www.linkedin.com/in/yunyang-lu-0555572ba/",
           },
@@ -68,6 +70,7 @@ window.PEOPLE = {
           role: "M.S. Student, Columbia",
           edu: "B.S., UNC-Chapel Hill",
           photo: "assets/scott_loftin.jpg",
+          email: "cpl2150@columbia.edu",
           links: {
             LinkedIn: "https://www.linkedin.com/in/scottloftin/",
           },
@@ -77,6 +80,7 @@ window.PEOPLE = {
           role: "M.S. Student, Columbia",
           edu: "B.S., Fudan University",
           photo: "assets/genhao_zhang.jpg",
+          email: "gz2406@columbia.edu",
           links: {
             LinkedIn: "https://www.linkedin.com/in/genhao-zhang-414021380/",
           },
@@ -86,6 +90,7 @@ window.PEOPLE = {
           role: "M.S. Student, Columbia",
           edu: "B.S., Fudan University",
           photo: "assets/yanxiang_zhu.jpg",
+          email: "yz5479@columbia.edu",
           links: {
             LinkedIn: "https://www.linkedin.com/in/yanxiang-zhu/",
           },
@@ -95,13 +100,17 @@ window.PEOPLE = {
           role: "M.S. Student, Columbia",
           edu: "B.S., CUHK",
           photo: "assets/zihao_fang.png",
-          links: {},
+          email: "zf2408@columbia.edu",
+          links: {
+            Website: "https://fzhwenzhou.github.io/",
+          },
         },
         {
           name: "Rishi Khare",
           role: "M.S. Student, Georgia Tech",
           edu: "B.S., UC Berkeley",
           photo: "assets/rishi_khare.jpg",
+          email: "rkhare31@gatech.edu",
           links: {
             Website: "https://www.rishiskhare.com/",
             Scholar: "https://scholar.google.com/citations?user=1SFrDE4AAAAJ&hl=en",
@@ -113,6 +122,7 @@ window.PEOPLE = {
           role: "M.S. Student, Purdue",
           edu: "B.S., Purdue",
           photo: "assets/jeff_zhang.jpg",
+          email: "zhan4018@purdue.edu",
           links: {},
         },
       ],
@@ -124,6 +134,7 @@ window.PEOPLE = {
           name: "Rohit Mahesh",
           role: "B.S. Student, Columbia",
           photo: "assets/rohit_mahesh.jpg",
+          email: "rm4336@columbia.edu",
           links: {
             LinkedIn: "https://www.linkedin.com/in/rohit-mahesh-/",
           },
@@ -132,6 +143,7 @@ window.PEOPLE = {
           name: "Yichong Zhang",
           role: "B.S. Student, Tsinghua",
           photo: "assets/yichong_zhang.JPG",
+          email: "yichongzhang@gmail.com",
           links: {},
         },
       ],
@@ -147,8 +159,12 @@ window.PEOPLE = {
     //   note: "co-advised with Prof. X",     // optional smaller line under the role
     //   photo: "assets/jane_doe.jpg",        // optional; monogram shown if omitted
     //   interests: "Neuro-symbolic accelerators",
-    //   links: { Website: "https://...", Scholar: "https://..." },
+    //   email: "jane@columbia.edu",          // optional; adds the email icon
+    //   links: { Website: "https://...", Scholar: "https://...", LinkedIn: "https://..." },
     // }
+    // Member cards show up to three icons: homepage (LinkedIn is used only
+    // when there is no Website), Google Scholar, and email. Anything not
+    // provided is left out.
   ],
 
   // ---- Past mentees (compact table) ----

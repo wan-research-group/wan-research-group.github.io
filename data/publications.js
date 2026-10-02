@@ -98,7 +98,7 @@ window.PUBLICATIONS = [
     authors: "Yaotian Liu, Lingyi Huang, Zishen Wan, Bo Yuan, Cheng Tan, Jeff Zhang",
     venue: "MICRO", venueFull: "IEEE/ACM International Symposium on Microarchitecture",
     year: 2026, type: "conference", tags: ["architecture"], selected: true, featured: true,
-    links: { Paper: "https://arxiv.org/pdf/2609.13420" },
+    links: { Paper: "https://arxiv.org/pdf/2609.13420", Code: "https://github.com/ytliu74/arborist" },
   },
   {
     id: "slm-mux",
@@ -212,7 +212,7 @@ window.PUBLICATIONS = [
     id: "agent-memory",
     title: "Measure Before You Manage: Evaluating Agent Working Memory in Coding Agents",
     authors: "Le Chen, Zishen Wan, Baixi Sun, Xiaolong Ma, Chih-Hsuan Yang, Feng Yan, Sheng Di, Franck Cappello, Rajeev Thakur",
-    venue: "arXiv", venueFull: "arXiv preprint",
+    venue: "NeurIPS Workshop", venueFull: "AgenticOS Workshop at NeurIPS 2026 (arXiv:2608.31057)",
     year: 2026, type: "preprint", tags: ["arch2"],
     links: { Paper: "https://arxiv.org/pdf/2608.31057" },
   },

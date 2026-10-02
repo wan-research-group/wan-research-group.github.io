@@ -474,6 +474,36 @@
 
   // ---------- people ----------
 
+  // Icon links on member cards: homepage (LinkedIn is used only when
+  // there is no personal site), Google Scholar, and email. An entry
+  // with no matching data is simply left out.
+  const PERSON_ICONS = {
+    website:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.4 2.8 2.4 15.2 0 18"/><path d="M12 3c-2.4 2.8-2.4 15.2 0 18"/></svg>',
+    scholar:
+      '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>',
+    email:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="m3.5 7.5 8.5 5.5 8.5-5.5"/></svg>',
+  };
+
+  function personIconsHTML(m) {
+    const L = m.links || {};
+    const items = [];
+    // [svg key, modifier class for the brand color, href, label]
+    if (L.Website) items.push(["website", "is-site", L.Website, "Homepage"]);
+    else if (L.LinkedIn) items.push(["website", "is-linkedin", L.LinkedIn, "LinkedIn"]);
+    if (L.Scholar) items.push(["scholar", "is-scholar", L.Scholar, "Google Scholar"]);
+    if (m.email) items.push(["email", "is-email", `mailto:${m.email}`, "Email"]);
+    if (!items.length) return "";
+    const html = items
+      .map(
+        ([icon, mod, href, label]) =>
+          `<a class="icon-link ${mod}" href="${esc(href)}" title="${esc(label)}" aria-label="${esc(m.name)}: ${esc(label)}">${PERSON_ICONS[icon]}</a>`
+      )
+      .join("");
+    return `<div class="person-links">${html}</div>`;
+  }
+
   function renderPeoplePage(piEl, groupsEl) {
     const pi = window.PEOPLE.pi;
     piEl.innerHTML = `
@@ -534,9 +564,7 @@
                 const avatar = m.photo
                   ? `<img class="avatar" src="${esc(m.photo)}" alt="${esc(m.name)}">`
                   : `<div class="monogram">${esc(m.name.trim()[0] || "?")}</div>`;
-                const links = Object.entries(m.links || {})
-                  .map(([k, v]) => `<a href="${esc(v)}">${esc(k)}</a>`)
-                  .join("");
+                const links = personIconsHTML(m);
                 return `
                 <div class="person">
                   ${avatar}
@@ -545,7 +573,7 @@
                   ${m.note ? `<div class="person-note">${esc(m.note)}</div>` : ""}
                   ${m.edu ? `<div class="person-edu">${esc(m.edu)}</div>` : ""}
                   ${m.interests ? `<div class="person-interests">${esc(m.interests)}</div>` : ""}
-                  ${links ? `<div class="person-links">${links}</div>` : ""}
+                  ${links}
                 </div>`;
               })
               .join("")}
