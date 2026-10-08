@@ -12,6 +12,14 @@
 window.PUBLICATIONS = [
   // ---------------- 2026 ----------------
   {
+    id: "carve",
+    title: "CARVE: Breaking Data Barriers in Chip Placement by Harnessing Reusable Expertise",
+    authors: "Jiefu Zhang, Haixiang Sun, Yang Xu, Vaneet Aggarwal, Zishen Wan",
+    venue: "arXiv", venueFull: "arXiv preprint (arXiv:2609.33106)",
+    year: 2026, type: "preprint", tags: ["arch2"],
+    links: { Paper: "https://arxiv.org/pdf/2609.33106" },
+  },
+  {
     id: "cocosys",
     title: "CoCoSys: The Co-Design of Cognitive AI from Algorithms to Systems",
     authors: "Zishen Wan, Yu (Kevin) Cao, Sumeet K. Gupta, Larry Heck, Tushar Krishna, Yingyan (Celine) Lin, Azad Naeemi, Bruno Olshausen, Priyadarshini Panda, Jan Rabaey, Vijay Raghunathan, Priyanka Raina, Tajana S. Rosing, Kaushik Roy, Jae-Sun Seo, Naresh Shanbhag, Josh Tenenbaum, Anand Raghunathan, Arijit Raychowdhury",

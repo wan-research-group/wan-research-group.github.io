@@ -142,9 +142,12 @@ window.PEOPLE = {
         {
           name: "Yichong Zhang",
           role: "B.S. Student, Tsinghua",
-          photo: "assets/yichong_zhang.JPG",
+          photo: "assets/yichong_zhang.jpg",
           email: "yichongzhang@gmail.com",
-          links: {},
+          links: {
+            Website: "https://et823828.github.io/Personal_website/",
+            Scholar: "https://scholar.google.com/citations?user=B-Io7DoAAAAJ&hl=en&oi=ao",
+          },
         },
       ],
     },

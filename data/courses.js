@@ -19,7 +19,7 @@ window.COURSES = [
       "AI is transforming computing in two directions: emerging AI workloads demand new hardware and system architectures, while AI is becoming a powerful tool for designing computing systems themselves. This graduate seminar follows both directions and the loop that connects them, from workload profiling and serving to agentic design of architectures and chips.",
     meta: [
       ["Time", "Fridays 10:10 AM - 12:00 PM"],
-      ["Location", "602 Northwest Corner"],
+      ["Location", "MUDD Building 825"],
       ["Office hours", "Wednesdays 5-6 PM, CSB 522"],
     ],
     modules: [
