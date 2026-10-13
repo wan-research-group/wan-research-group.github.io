@@ -118,7 +118,7 @@ window.PEOPLE = {
           },
         },
         {
-          name: "Jeff Zhang",
+          name: "Jiefu (Jeff) Zhang",
           role: "M.S. Student, Purdue",
           edu: "B.S., Purdue",
           photo: "assets/jeff_zhang.jpg",
@@ -234,4 +234,13 @@ window.PEOPLE = {
       next: "Microsoft",
     },
   ],
+
+  // ---- Extra names to bold in publication author lists ----
+  // Lab members who do not have a card above, or who publish under a
+  // different form of their name than the card shows. Everyone in `pi`,
+  // `groups`, and `pastMentees` is bolded automatically.
+  // "Jiefu Zhang" is the byline of the "Jiefu (Jeff) Zhang" card above;
+  // the card deliberately avoids the bare string "Jeff Zhang" so that
+  // Prof. Jeff Zhang (ASU), a collaborator on Arborist, is not bolded.
+  boldAlso: ["Jiefu Zhang", "Hanchen Yang"],
 };

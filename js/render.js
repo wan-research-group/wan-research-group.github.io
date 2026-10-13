@@ -33,6 +33,7 @@
       names.push(window.PEOPLE.pi.name);
       (window.PEOPLE.groups || []).forEach((g) => (g.members || []).forEach((m) => names.push(m.name)));
       (window.PEOPLE.pastMentees || []).forEach((m) => names.push(m.name));
+      (window.PEOPLE.boldAlso || []).forEach((n) => names.push(n));
     }
     return names;
   })();
