@@ -594,7 +594,7 @@
 
     if (page === "home") {
       renderPillars(document.getElementById("pillars"));
-      renderNews(document.getElementById("home-news"), 6);
+      renderNews(document.getElementById("home-news"), 10);
       renderCollaborators(document.getElementById("collaborators"));
     }
     if (page === "news") {

@@ -16,7 +16,7 @@ window.NEWS = [
   {
     date: "2026-09",
     tag: "Workshop",
-    text: "We will host the [Architecture 2.0: Agentic AI for Computing System Design](https://harvard-edge.github.io/iiswc-26-arch-2-tutorial/) tutorial at **IISWC 2026**.",
+    text: "We host the [Architecture 2.0: Agentic AI for Computing System Design](https://harvard-edge.github.io/iiswc-26-arch-2-tutorial/) tutorial at **IISWC 2026**.",
   },
   {
     date: "2026-09",
