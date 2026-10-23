@@ -46,7 +46,7 @@ window.NEWS = [
   {
     date: "2026-07",
     tag: "Award",
-    text: "Zishen is selected for the **WAIC Yunfan Award** (15 researchers worldwide, under age 30).",
+    text: "Zishen is selected for the **WAIC Yunfan Award**.",
   },
   {
     date: "2026-07",
