@@ -9,6 +9,11 @@
 window.NEWS = [
   // ---------------- 2026 ----------------
   {
+    date: "2026-11",
+    tag: "Paper",
+    text: "Our work “HE-Guard: Efficient Fault Recovery for Reliable Homomorphic Encryption Accelerators” is accepted to **HPCA 2027**.",
+  },
+  {
     date: "2026-09",
     tag: "Paper",
     text: "Our work [Hawkeye: Hardware-Aware GPU Kernel Optimization with Minimal Supervision](https://www.alphaxiv.org/pdf/2608.hawkeye-hardware-aware-gpu-kernel-optimization) is accepted to **NeurIPS 2026**.",

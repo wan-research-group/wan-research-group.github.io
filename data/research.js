@@ -27,7 +27,7 @@ window.RESEARCH = [
     long:
       "From cooperative robot teams to multi-agent LLM workflows, emerging AI applications stress every layer of the system stack: long-horizon planning, tightly coupled perception-cognition-action loops, and strict real-time budgets. We build the workload characterizations, benchmarks, runtime and serving systems, and cross-layer co-designs that make these applications efficient, scalable, and reliable, from edge devices to serving clusters. We also develop agentic methods for system modeling, optimization, and operation.",
     keywords: ["Agentic serving", "Workload characterization", "Reliability", "System co-design", "GPU/CPU/NPU/TPU"],
-    pubs: ["create", "reca", "dyserve", "faster-moa", "slm-mux", "embodiedperf", "mulberry"],
+    pubs: ["he-guard", "create", "reca", "dyserve", "faster-moa", "slm-mux", "embodiedperf", "mulberry"],
   },
   {
     id: "chips",

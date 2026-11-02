@@ -217,17 +217,18 @@
   };
 
   function renderPublicationsPage(listEl, controlsEl) {
+    const listedPubs = window.PUBLICATIONS.filter((p) => !p.researchOnly);
     const FILTERS = [
       ["all", "All"],
       ["selected", "Selected"],
       ...Object.entries(AREAS).map(([k, a]) => [k, a.label]),
     ];
     const counts = {
-      all: window.PUBLICATIONS.length,
-      selected: window.PUBLICATIONS.filter((p) => p.selected).length,
+      all: listedPubs.length,
+      selected: listedPubs.filter((p) => p.selected).length,
     };
     Object.keys(AREAS).forEach((k) => {
-      counts[k] = window.PUBLICATIONS.filter((p) => (p.tags || []).includes(k)).length;
+      counts[k] = listedPubs.filter((p) => (p.tags || []).includes(k)).length;
     });
 
     // Initial state comes from the URL (?area=...&q=...) so any
@@ -260,7 +261,7 @@
     }
 
     function draw() {
-      const pubs = window.PUBLICATIONS.filter(matches);
+      const pubs = listedPubs.filter(matches);
       const byYear = {};
       pubs.forEach((p) => (byYear[p.year] = byYear[p.year] || []).push(p));
       const years = Object.keys(byYear).sort((a, b) => b - a);

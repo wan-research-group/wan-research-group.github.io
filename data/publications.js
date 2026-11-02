@@ -10,6 +10,15 @@
 //   - `links` keys become the link labels: Paper, Code, Slides, ...
 // ============================================================
 window.PUBLICATIONS = [
+  // ---------------- 2027 ----------------
+  {
+    id: "he-guard",
+    researchOnly: true, // Remove once the author list and paper are public.
+    title: "HE-Guard: Efficient Fault Recovery for Reliable Homomorphic Encryption Accelerators",
+    authors: "",
+    venue: "HPCA",
+    year: 2027, type: "conference", tags: ["systems"],
+  },
   // ---------------- 2026 ----------------
   {
     id: "carve",
